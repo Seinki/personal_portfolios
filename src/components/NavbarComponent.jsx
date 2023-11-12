@@ -1,14 +1,30 @@
+import { useEffect, useState } from "react";
 import { Container, Navbar, Nav } from "react-bootstrap";
 
 export default function NavbarComponent() {
+  const [changeColor, setChangeColor] = useState(false);
+
+  const changeBackgroundcolor = () => {
+    if (window.scrollY > 10) {
+      setChangeColor(true);
+    } else {
+      setChangeColor(false);
+    }
+  }
+
+  useEffect(() => {
+    changeBackgroundcolor();
+    window.addEventListener('scroll', changeBackgroundcolor);
+  });
+
   return (
     <div className="navbar-page">
-      <Navbar expand="lg" className="pb-2 pt-2 text-white">
+      <Navbar fixed="top" expand="lg" className={`${changeColor ? "color-active" : ""} pb-2 pt-2 text-white shadow`}>
       <Container>
         <Navbar.Brand href="#home" className="fw-bold fs-3 text-white">SeinkiAL</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="mx-auto g-5 text-white">
+          <Nav className="mx-auto text-white">
             <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#link">About</Nav.Link>
             <Nav.Link href="#link">Resume</Nav.Link>
