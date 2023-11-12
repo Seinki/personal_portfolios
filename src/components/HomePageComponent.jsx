@@ -1,6 +1,7 @@
 import { Col, Container, Row } from "react-bootstrap";
 import personalData from "../data/personalData.json";
 import AboutComponent from "./AboutComponent";
+import ExperienceComponent from "./ExperienceComponent";
 
 export default function HomePageComponent() {
   const heroImg = personalData.main.heroImg;
@@ -27,6 +28,7 @@ export default function HomePageComponent() {
       </div>
       {/* About Page */}
       <AboutComponent />
+      <ExperienceComponent />
     </>
   );
 }
