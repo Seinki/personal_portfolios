@@ -1,0 +1,17 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Navbar Style */
+.navbar-page .navbar {
+  background-color: #282a36;
+  color: white;
+}
+
+.navbar-page .navbar .nav-link {
+  color: white;
+}
+.navbar-page .navbar .nav-link:hover {
+  color: #000000;
+}
+/* Navbar Style */
