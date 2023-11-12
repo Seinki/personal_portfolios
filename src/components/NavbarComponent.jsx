@@ -16,6 +16,7 @@ export default function NavbarComponent() {
             <Nav.Link href="#link">Contact</Nav.Link>
           </Nav>
         </Navbar.Collapse>
+        <div className="dark-mode"></div>
       </Container>
     </Navbar>
     </div>
