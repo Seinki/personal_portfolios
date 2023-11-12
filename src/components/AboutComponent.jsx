@@ -2,7 +2,7 @@ import { Col, Container, Row } from "react-bootstrap";
 
 export default function AboutComponent() {
   return (
-    <div className="about-page min-vh-100">
+    <div className="about-page">
       <Container>
         <Row>
           <Col>
