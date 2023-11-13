@@ -12,7 +12,7 @@ function App() {
       <Routes>
         <Route path='/' Component={HomePageComponent}/>
         <Route  path='/about' Component={AboutComponent}/>
-        <Route  path='/about' Component={ExperienceComponent}/>
+        <Route  path='/exp' Component={ExperienceComponent}/>
       </Routes>
     </>
   )
