@@ -64,4 +64,20 @@
   padding-top: 5rem;
   padding-bottom: 6rem;
 }
+
+.about-page .row:nth-child(3) .col:nth-child(1) h2 {
+  padding-top: 3rem;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.cards .card-icon {
+  text-align: center;
+  padding: 1rem;
+}
 /* About Style */
