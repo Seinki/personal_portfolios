@@ -144,3 +144,34 @@ export const exp = [
     ],
   },
 ];
+
+export const portfolio = [
+  {
+    id: 1,
+    img: "src\\assets\\img\\portfolios\\prototype-planet-burger.png",
+    title: "UI/UX Planet Burger",
+    desc: "Implementasi tugas project pembuatan UI website planet burger pada saat magang di Baraka Solution",
+    link: "https://www.figma.com/proto/YvxnkuoZ278fq4YZXrPMCv/Tugas-Project-UI-(RubicWeb---Seinki)?node-id=1-2&scaling=scale-down",
+  },
+  {
+    id: 2,
+    img: "src\\assets\\img\\portfolios\\ui-planet-burger.png",
+    title: "Frontend Planet Burger",
+    desc: "Implementasi tugas project pembuatan Frontend website untuk planet burger pada saat magang di Baraka Solution",
+    link: "https://github.com/Seinki/Project-Implementasi-Skill-Web-PlanetBurger-",
+  },
+  {
+    id: 3,
+    img: "src\\assets\\img\\portfolios\\coursely-e-course.png",
+    title: "CourseLy - E-Course",
+    desc: "Project pembuatan website e-learning bernama CourseLy untuk berlatih penggunaan framework React Vite",
+    link: "https://github.com/Seinki/coursely-web-course",
+  },
+  {
+    id: 4,
+    img: "src\\assets\\img\\portfolios\\personal-portfolio.png",
+    title: "Personal Portfolios",
+    desc: "Web personal portfolio ini akan terus dikembangkan menjadi lebih baik kedepannya.",
+    link: "",
+  },
+]
