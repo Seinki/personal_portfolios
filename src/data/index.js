@@ -84,7 +84,7 @@ export const exp = [
     eventKey: 1,
     title: "Baraka Solution",
     jobDesc: "Junior Web Programmer & IT Support",
-    time: "November 2022 - December 2022",
+    time: "November 2022 - December 2022 (Internship)",
     desc: [
       {
         id: 1,
