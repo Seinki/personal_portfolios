@@ -3,6 +3,7 @@ import personalData from "../data/personalData.json";
 import AboutComponent from "./AboutComponent";
 import ExperienceComponent from "./ExperienceComponent";
 import PortfolioComponent from "./PortfolioComponent";
+import ContactComponent from "./ContactComponent";
 
 export default function HomePageComponent() {
   const heroImg = personalData.main.heroImg;
@@ -31,6 +32,7 @@ export default function HomePageComponent() {
       <AboutComponent />
       <ExperienceComponent />
       <PortfolioComponent />
+      <ContactComponent />
     </>
   );
 }
