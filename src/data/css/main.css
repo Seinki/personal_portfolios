@@ -81,3 +81,17 @@
   padding: 1rem;
 }
 /* About Style */
+
+/* Experiences Style  */
+.exp-page .row:nth-child(2) h5 {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 1rem;
+  padding-right: 0;
+}
+
+.exp-page .accordions .accordion .accordion-button:focus {
+  border: none;
+  box-shadow: none;
+}
+/* Experiences Style  */
