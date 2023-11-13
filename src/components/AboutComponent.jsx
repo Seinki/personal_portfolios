@@ -1,8 +1,9 @@
-import { Col, Container, Row } from "react-bootstrap";
+import { Card, Col, Container, Row } from "react-bootstrap";
+import { cards } from "../data/index";
 
 export default function AboutComponent() {
   return (
-    <div className="about-page">
+    <div className="about-page ">
       <Container>
         <Row>
           <Col>
@@ -30,6 +31,35 @@ export default function AboutComponent() {
               recusandae quia unde, aperiam consectetur atque beatae amet,
               distinctio laudantium voluptatibus rem earum.
             </p>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <h2 className="fw-bold">Specialized in</h2>
+          </Col>
+        </Row>
+        <Row>
+          <Col className="pt-3 d-flex gap-3">
+            {cards.map((data) => {
+              return (
+                <div className="cards" key={data.id}>
+                  <Card style={{ width: "20rem" }} className="shadow">
+                    <Card.Body>
+                      <div className="card-icon">
+                        <i className={`${data.icon} text-center fs-3`}></i>
+                      </div>
+                      <Card.Title className="text-center p-2">
+                        {data.title}
+                      </Card.Title>
+                      <Card.Subtitle className="mb-2 text-muted">
+                        {data.tools}
+                      </Card.Subtitle>
+                      <Card.Text className="p-3 pt-0 text-center">{data.desc}</Card.Text>
+                    </Card.Body>
+                  </Card>
+                </div>
+              );
+            })}
           </Col>
         </Row>
       </Container>
