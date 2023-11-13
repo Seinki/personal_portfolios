@@ -1,10 +1,10 @@
-import { Col, Container, Row } from "react-bootstrap";
+import { Button, CardActionArea, CardActions } from "@mui/material";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import { Button, CardActionArea, CardActions } from "@mui/material";
-import { portfolio } from "../data/index";
+import { Col, Container, Row } from "react-bootstrap";
+import { portfolio } from "../data/js/index";
 
 export default function PortfolioComponent() {
   return (
@@ -58,7 +58,12 @@ export default function PortfolioComponent() {
         <Row>
           <Col className="text-center pt-5">
             <button className="btn rounded-5">
-              <a className="text-decoration-none" href="https://github.com/Seinki/" target="_blank" rel="noreferrer">
+              <a
+                className="text-decoration-none"
+                href="https://github.com/Seinki/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 See more on GitHub <i className="fa-solid fa-arrow-right"></i>
               </a>
             </button>

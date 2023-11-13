@@ -1,5 +1,5 @@
 import { Accordion, Col, Container, Row } from "react-bootstrap";
-import { exp } from "../data/index";
+import { exp } from "../data/js/index";
 
 export default function ExperienceComponent() {
   return (
@@ -29,7 +29,7 @@ export default function ExperienceComponent() {
                             <ul key={list.id}>
                               <li>{list.description}</li>
                             </ul>
-                          )
+                          );
                         })}
                       </Accordion.Body>
                     </Accordion.Item>

@@ -1,10 +1,10 @@
 import { Col, Container, Row } from "react-bootstrap";
-import { heroImg } from '../data/index';
+import { heroImg } from "../data/js/index";
 import AboutComponent from "./AboutComponent";
-import ExperienceComponent from "./ExperienceComponent";
-import PortfolioComponent from "./PortfolioComponent";
 import ContactComponent from "./ContactComponent";
+import ExperienceComponent from "./ExperienceComponent";
 import FooterComponent from "./FooterComponent";
+import PortfolioComponent from "./PortfolioComponent";
 
 export default function HomePageComponent() {
   return (
@@ -23,17 +23,20 @@ export default function HomePageComponent() {
               </div>
               <div className="buttons">
                 <button className="btn fs-5 rounded-5">
-                  <a href="https://drive.google.com/file/d/1kG-CzT-DzkasVbg_6k8j5QKDde3jhzTc/view?usp=sharing" target="_blank" rel="noopener noreferrer">Hire Me</a>
-                  </button>
+                  <a
+                    href="https://drive.google.com/file/d/1kG-CzT-DzkasVbg_6k8j5QKDde3jhzTc/view?usp=sharing"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Hire Me
+                  </a>
+                </button>
               </div>
             </Col>
             <Col>
-            {heroImg.map((data) => {
-              return (
-
-                <img key={data.id} src={data.image} alt="hero-img" />
-              )
-            })}
+              {heroImg.map((data) => {
+                return <img key={data.id} src={data.image} alt="hero-img" />;
+              })}
             </Col>
           </Row>
         </Container>

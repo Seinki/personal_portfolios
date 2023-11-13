@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import { Container, Navbar, Nav } from "react-bootstrap";
+import { Container, Nav, Navbar } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 
-import { navLinks } from "../data/index";
+import { navLinks } from "../data/js/index";
 
 export default function NavbarComponent() {
   const [changeColor, setChangeColor] = useState(false);

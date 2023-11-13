@@ -1,5 +1,5 @@
 import { Card, Col, Container, Row } from "react-bootstrap";
-import { cards } from "../data/index";
+import { cards } from "../data/js/index";
 
 export default function AboutComponent() {
   return (
@@ -54,7 +54,9 @@ export default function AboutComponent() {
                       <Card.Subtitle className="mb-2 text-muted">
                         {data.tools}
                       </Card.Subtitle>
-                      <Card.Text className="p-3 pt-0 text-center">{data.desc}</Card.Text>
+                      <Card.Text className="p-3 pt-0 text-center">
+                        {data.desc}
+                      </Card.Text>
                     </Card.Body>
                   </Card>
                 </div>
