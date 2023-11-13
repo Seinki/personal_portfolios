@@ -4,6 +4,7 @@ import NavbarComponent from './components/NavbarComponent'
 import AboutComponent from './components/AboutComponent'
 import ExperienceComponent from './components/ExperienceComponent'
 import PortfolioComponent from './components/PortfolioComponent'
+import ContactComponent from './components/ContactComponent'
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
         <Route  path='/about' Component={AboutComponent}/>
         <Route  path='/exp' Component={ExperienceComponent}/>
         <Route  path='/portfolio' Component={PortfolioComponent}/>
+        <Route  path='/contact' Component={ContactComponent}/>
       </Routes>
     </>
   )
