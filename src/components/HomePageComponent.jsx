@@ -4,6 +4,7 @@ import AboutComponent from "./AboutComponent";
 import ExperienceComponent from "./ExperienceComponent";
 import PortfolioComponent from "./PortfolioComponent";
 import ContactComponent from "./ContactComponent";
+import FooterComponent from "./FooterComponent";
 
 export default function HomePageComponent() {
   const heroImg = personalData.main.heroImg;
@@ -33,6 +34,7 @@ export default function HomePageComponent() {
       <ExperienceComponent />
       <PortfolioComponent />
       <ContactComponent />
+      <FooterComponent />
     </>
   );
 }
