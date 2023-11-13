@@ -1,3 +1,9 @@
+import heroimage from '../assets/img/hero-image.png';
+import portfolio1 from '../assets/img/portfolios/prototype-planet-burger.png';
+import portfolio2 from '../assets/img/portfolios/ui-planet-burger.png';
+import portfolio3 from '../assets/img/portfolios/coursely-e-course.png';
+import portfolio4 from '../assets/img/portfolios/personal-portfolio.png';
+
 export const navLinks = [
   {
     id: 1,
@@ -23,6 +29,13 @@ export const navLinks = [
     id: 5,
     path: "contact",
     text: "Contact",
+  },
+];
+
+export const heroImg = [
+  {
+    id: 1,
+    image: heroimage,
   },
 ];
 
@@ -148,30 +161,30 @@ export const exp = [
 export const portfolio = [
   {
     id: 1,
-    img: "src\\assets\\img\\portfolios\\prototype-planet-burger.png",
+    img: portfolio1,
     title: "UI/UX Planet Burger",
     desc: "Implementasi tugas project pembuatan UI website planet burger pada saat magang di Baraka Solution",
     link: "https://www.figma.com/proto/YvxnkuoZ278fq4YZXrPMCv/Tugas-Project-UI-(RubicWeb---Seinki)?node-id=1-2&scaling=scale-down",
   },
   {
     id: 2,
-    img: "src\\assets\\img\\portfolios\\ui-planet-burger.png",
+    img: portfolio2,
     title: "Frontend Planet Burger",
     desc: "Implementasi tugas project pembuatan Frontend website untuk planet burger pada saat magang di Baraka Solution",
     link: "https://github.com/Seinki/Project-Implementasi-Skill-Web-PlanetBurger-",
   },
   {
     id: 3,
-    img: "src\\assets\\img\\portfolios\\coursely-e-course.png",
+    img: portfolio3,
     title: "CourseLy - E-Course",
     desc: "Project pembuatan website e-learning bernama CourseLy untuk berlatih penggunaan framework React Vite",
     link: "https://github.com/Seinki/coursely-web-course",
   },
   {
     id: 4,
-    img: "src\\assets\\img\\portfolios\\personal-portfolio.png",
+    img: portfolio4,
     title: "Personal Portfolios",
     desc: "Web personal portfolio ini akan terus dikembangkan menjadi lebih baik kedepannya.",
     link: "",
   },
-]
+];

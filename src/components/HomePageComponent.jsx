@@ -1,5 +1,5 @@
 import { Col, Container, Row } from "react-bootstrap";
-import personalData from "../data/personalData.json";
+import { heroImg } from '../data/index';
 import AboutComponent from "./AboutComponent";
 import ExperienceComponent from "./ExperienceComponent";
 import PortfolioComponent from "./PortfolioComponent";
@@ -7,7 +7,6 @@ import ContactComponent from "./ContactComponent";
 import FooterComponent from "./FooterComponent";
 
 export default function HomePageComponent() {
-  const heroImg = personalData.main.heroImg;
   return (
     <>
       <div className="home-page min-vh-100">
@@ -29,7 +28,12 @@ export default function HomePageComponent() {
               </div>
             </Col>
             <Col>
-              <img src={heroImg} alt="hero-img" />
+            {heroImg.map((data) => {
+              return (
+
+                <img key={data.id} src={data.image} alt="hero-img" />
+              )
+            })}
             </Col>
           </Row>
         </Container>
