@@ -1,8 +1,8 @@
-import heroimage from '../assets/img/hero-image.png';
-import portfolio1 from '../assets/img/portfolios/prototype-planet-burger.png';
-import portfolio2 from '../assets/img/portfolios/ui-planet-burger.png';
-import portfolio3 from '../assets/img/portfolios/coursely-e-course.png';
-import portfolio4 from '../assets/img/portfolios/personal-portfolio.png';
+import heroimage from '../../assets/img/hero-image.png';
+import portfolio1 from '../../assets/img/portfolios/prototype-planet-burger.png';
+import portfolio2 from '../../assets/img/portfolios/ui-planet-burger.png';
+import portfolio3 from '../../assets/img/portfolios/coursely-e-course.png';
+import portfolio4 from '../../assets/img/portfolios/personal-portfolio.png';
 
 export const navLinks = [
   {
