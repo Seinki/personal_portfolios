@@ -56,6 +56,27 @@
   cursor: pointer;
   transition: all 0.3s ease;
 }
+
+.home-page .buttons {
+  padding-top: 3rem;
+}
+
+.home-page button {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: #4a65ff;
+  color: white;
+}
+.home-page button:hover {
+  background-color: rgb(3 7 18);
+  color: white;
+  border: 1px solid white;
+}
+
+.home-page button a {
+  text-decoration: none;
+  color: white;
+}
 /* HomePage Style */
 
 /* About Style */

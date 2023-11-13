@@ -22,6 +22,11 @@ export default function HomePageComponent() {
                 <i className="fa-brands fa-linkedin"></i>
                 <i className="fa-brands fa-github"></i>
               </div>
+              <div className="buttons">
+                <button className="btn fs-5 rounded-5">
+                  <a href="https://drive.google.com/file/d/1kG-CzT-DzkasVbg_6k8j5QKDde3jhzTc/view?usp=sharing" target="_blank" rel="noopener noreferrer">Hire Me</a>
+                  </button>
+              </div>
             </Col>
             <Col>
               <img src={heroImg} alt="hero-img" />
