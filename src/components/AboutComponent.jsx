@@ -13,23 +13,37 @@ export default function AboutComponent() {
         <Row>
           <Col className="text-center">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Consequatur vero qui quae nam et tempora molestias voluptatem
-              adipisci aliquam necessitatibus, aperiam deserunt natus quia
-              beatae magni tenetur reiciendis delectus animi!
+              I am a Warehouse Staff with over 2 years of experience in the
+              logistics industry. I have expertise in operating scanning tools
+              specialized in courier logistics. During my career, I have
+              successfully helped make BDO branches into branches with better
+              work performance results compared to other BDO branches.
             </p>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Laudantium necessitatibus vero quis quia voluptas assumenda fugiat
-              ipsa iste, dolorem facere.
+              I am very passionate and enthusiastic about deepening my knowledge
+              in IT, especially programming and cybersecurity. With my strong
+              background in Computer and Network Engineering, I am committed to
+              always improving my skills in this field to switch my career to
+              Web development. My main expertise involves computer operations,
+              both hardware and software. Not only that, but I am also quite
+              proficient in computer networking, web programming, and security
+              as evidenced by several related certifications on my LinkedIn
+              profile. By understanding the basics, we can achieve the desired
+              goal or result.
             </p>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
-              ab qui totam est repellat recusandae, impedit esse optio eligendi,
-              nulla vel commodi repellendus, voluptate sunt officia inventore
-              harum id. Veniam harum debitis odio repellat eum similique, dolore
-              recusandae quia unde, aperiam consectetur atque beatae amet,
-              distinctio laudantium voluptatibus rem earum.
+              In addition, I am very enthusiastic about current technological
+              developments and I am always exploring. I love collaborating with
+              passionate people who have the vision to always be up-to-date in
+              technology. I am always open to new opportunities and
+              collaborations that can broaden my horizons and contributions. If
+              you are interested in connecting or discussing further, please
+              feel free to message me.
+            </p>
+            <p>
+              Thank you for your visit to my personal portfolios. I look forward
+              to contributing to achieving common goals and building meaningful
+              connections on LinkedIn.
             </p>
           </Col>
         </Row>
