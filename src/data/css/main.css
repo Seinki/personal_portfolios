@@ -7,6 +7,10 @@
   --black-color: rgb(3 7 18);
 }
 
+/* .about-page, .exp-page, .portfolio-page, .contact-page {
+  padding-top: 5rem;
+} */
+
 /* Navbar Style */
 .navbar-page .navbar {
   background-color: rgb(3 7 18);
@@ -87,8 +91,9 @@
 /* About Style */
 .about-page {
   background-color: white;
-  padding-top: 5rem;
-  padding-bottom: 6rem;
+  padding-top: 10rem;
+  margin-top: 8rem;
+  /* padding-bottom: 6rem; */
 }
 
 .about-page .row:nth-child(3) .col:nth-child(1) h2 {
@@ -113,6 +118,11 @@
 /* About Style */
 
 /* Experiences Style  */
+.exp-page {
+  padding-top: 10rem;
+  margin-top: 8rem;
+}
+
 .exp-page .row:nth-child(2) h5 {
   border: 1px solid black;
   border-radius: 5px;
@@ -128,8 +138,10 @@
 
 /* Portfolio Style */
 .portfolio-page {
-  padding-top: 7rem;
-  padding-bottom: 3rem;
+  padding-top: 10rem;
+  margin-top: 8rem;
+  /* padding-top: 7rem; */
+  /* padding-bottom: 3rem; */
 }
 
 .cards-porto {
@@ -165,8 +177,10 @@
 
 /* Contact Style */
 .contact-page {
-  padding-top: 8rem;
-  padding-bottom: 8rem;
+  padding-top: 10rem;
+  margin-top: 5rem;
+  /* padding-top: 8rem; */
+  /* padding-bottom: 8rem; */
 }
 
 .contact-form {
