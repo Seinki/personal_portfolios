@@ -2,6 +2,11 @@
   font-family: "Poppins", sans-serif;
 }
 
+:root {
+  --blue-color: #2596EB;
+  --black-color: rgb(3 7 18);
+}
+
 /* Navbar Style */
 .navbar-page .navbar {
   background-color: rgb(3 7 18);
@@ -49,10 +54,10 @@
   display: flex;
   gap: 1rem;
   font-size: 1.5rem;
-  padding-top: 2.5rem;
+  padding-top: 0.3rem;
 }
 .social-icons i:hover {
-  color: #4a65ff;
+  color: var(--blue-color);
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -64,7 +69,7 @@
 .home-page button {
   padding-left: 1rem;
   padding-right: 1rem;
-  background-color: #4a65ff;
+  background-color: var(--blue-color);
   color: white;
 }
 .home-page button:hover {
@@ -161,6 +166,7 @@
 /* Contact Style */
 .contact-page {
   padding-top: 8rem;
+  padding-bottom: 8rem;
 }
 
 .contact-form {
@@ -195,6 +201,25 @@
   text-decoration: none;
   color: rgb(177, 177, 177);
 }
+
+.contact-page button {
+  background-color: var(--blue-color);
+  color: white;
+}
+.contact-page button:hover {
+  background-color: #1e79be;
+  color: rgb(207, 207, 207);
+}
+
+.contact-info .address{
+  padding-bottom: 1rem;
+}
+.contact-info .phone{
+  padding-bottom: 1rem;
+}
+.contact-info .emails{
+  padding-bottom: 1rem;
+}
 /* Contact Style */
 
 /* Footer Style */
@@ -202,5 +227,6 @@ footer {
   background-color: rgb(3 7 18);
   padding-top: 5rem;
   padding: 2rem;
+  margin-top: 5rem;
 }
 /* Footer Style */
