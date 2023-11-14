@@ -60,7 +60,7 @@ export default function PortfolioComponent() {
             <button className="btn rounded-5">
               <a
                 className="text-decoration-none"
-                href="https://github.com/Seinki/"
+                href="https://github.com/Seinki?tab=repositories"
                 target="_blank"
                 rel="noreferrer"
               >
