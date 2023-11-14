@@ -8,7 +8,7 @@ import { portfolio } from "../data/js/index";
 
 export default function PortfolioComponent() {
   return (
-    <div className="portfolio-page min-vh-100">
+    <div className="portfolio-page min-vh-100 pt-5">
       <Container>
         <Row>
           <Col>

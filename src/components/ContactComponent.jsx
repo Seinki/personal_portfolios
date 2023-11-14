@@ -4,7 +4,7 @@ import { Col, Container, Form, Row } from "react-bootstrap";
 export default function ContactComponent() {
   const [name, setName] = useState("");
   return (
-    <div className="contact-page min-vh-100 pb-5">
+    <div className="contact-page min-vh-100 pt-5">
       <Container>
         <Row className="p-5 m-auto d-flex align-items-center justify-content-center">
           <Col>

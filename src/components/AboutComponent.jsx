@@ -3,7 +3,7 @@ import { cards } from "../data/js/index";
 
 export default function AboutComponent() {
   return (
-    <div className="about-page ">
+    <div className="about-page min-vh-100 pt-5">
       <Container>
         <Row>
           <Col>

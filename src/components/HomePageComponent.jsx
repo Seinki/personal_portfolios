@@ -3,7 +3,6 @@ import { heroImg } from "../data/js/index";
 import AboutComponent from "./AboutComponent";
 import ContactComponent from "./ContactComponent";
 import ExperienceComponent from "./ExperienceComponent";
-import FooterComponent from "./FooterComponent";
 import PortfolioComponent from "./PortfolioComponent";
 
 export default function HomePageComponent() {
@@ -47,7 +46,6 @@ export default function HomePageComponent() {
       <ExperienceComponent />
       <PortfolioComponent />
       <ContactComponent />
-      <FooterComponent />
     </>
   );
 }
