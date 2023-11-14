@@ -54,13 +54,16 @@
   width: 600px;
 }
 
-.social-icons {
-  display: flex;
+.social-icons a {
+  /* display: flex; */
+  padding: 5px;
   gap: 1rem;
   font-size: 1.5rem;
   padding-top: 0.3rem;
+  text-decoration: none;
+  color: white;
 }
-.social-icons i:hover {
+.social-icons a:hover {
   color: var(--blue-color);
   cursor: pointer;
   transition: all 0.3s ease;
