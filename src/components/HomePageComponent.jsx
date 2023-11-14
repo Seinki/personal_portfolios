@@ -13,9 +13,10 @@ export default function HomePageComponent() {
         <Container>
           <Row className="row-cols-2 d-flex justify-content-between align-items-center">
             <Col>
-              <h3>Hi I&apos;m</h3>
+              <h4>Hi I&apos;m</h4>
               <h1 className="fw-bold">Seinki Anna Lesmana</h1>
-              <h3 className="">Junior Web Developer</h3>
+              <h3 className="">IT Enthusiast</h3>
+              <p>Transitioning from Staff Warehouse to Web Development. <br />I&apos;m ready to switch careers to this field with passion and enthusiasm.</p>
               <div className="social-icons">
                 <i className="fa-brands fa-instagram"></i>
                 <i className="fa-brands fa-linkedin"></i>
