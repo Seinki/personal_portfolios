@@ -5,6 +5,7 @@ import AboutComponent from './components/AboutComponent'
 import ExperienceComponent from './components/ExperienceComponent'
 import PortfolioComponent from './components/PortfolioComponent'
 import ContactComponent from './components/ContactComponent'
+import FooterComponent from './components/FooterComponent'
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
         <Route  path='/portfolio' Component={PortfolioComponent}/>
         <Route  path='/contact' Component={ContactComponent}/>
       </Routes>
+      <FooterComponent />
     </>
   )
 }
