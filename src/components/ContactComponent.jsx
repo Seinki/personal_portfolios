@@ -37,10 +37,13 @@ export default function ContactComponent() {
                   <Form.Label>Example textarea</Form.Label>
                   <Form.Control as="textarea" rows={3} />
                 </Form.Group>
+                <button className="btn">
+                  Submit
+                </button>
               </Form>
             </div>
           </Col>
-          <Col className="py-5">
+          <Col className="contact-info">
             <div className="address">
               <h6 className="fw-bold fs-5"><i className="fa-solid fa-house"></i> Address</h6>
               <p>Cicaheum, Kiaracondong, Kota Bandung, Jawa Barat, Indonesia</p>
