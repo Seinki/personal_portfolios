@@ -66,28 +66,28 @@ export const exp = [
     defaultActiveKey: 0,
     eventKey: 0,
     title: "Ninja Xpress",
-    jobDesc: "Staff Warehouse",
+    jobDesc: "Warehouse Staff",
     time: "December 2021 - Present",
     desc: [
       {
         id: 1,
         description:
-          "Membantu mengangkat barang (paket) dalam karung maupun tidak ke dalam gudang.",
+          "Assist in lifting goods (packages) in sacks or not into the warehouse.",
       },
       {
         id: 2,
         description:
-          "Membantu pemindaian awal paket menggunakan alat scanning barcode khusus resi untuk memilah dan memilih berdasarkan tujuan paket (kota / provinsi).",
+          "Assist with the initial scanning of packages using a specialized receipt barcode scanning tool to sort and select by package destination (city/province).",
       },
       {
         id: 3,
         description:
-          "Melakukan pemindaian menggunakan mesin DWS (Dimension, Weight, and Scanning) agar mendapatkan akurasi data paket yang baik dan benar berdasarkan dimensi, berat dan foto dari paket.",
+          "Scanning using DWS (Dimension, Weight, and Scanning) machine to get good and correct accuracy of package data based on dimensions, weight and photos of the package.",
       },
       {
         id: 4,
         description:
-          "Memindai paket dan memasukkannya ke dalam karung berlabel barcode khusus resi berdasarkan tujuan paket (kota).",
+          "Scan the package and put it into a sack labeled with a special receipt barcode based on the package's destination (city).",
       },
     ],
   },
@@ -102,27 +102,27 @@ export const exp = [
       {
         id: 1,
         description:
-          "Membantu membuat dan mengembangkan aplikasi web yang dibutuhkan Perusahaan.",
+          "Assist in creating and developing web applications required by the Company.",
       },
       {
         id: 2,
         description:
-          "Membuat Prototype pengajuan desain website / web form dengan melakukan riset dan analisis kebutuhan pengguna dan mengumpulkan feedback dari pengguna, serta menerapkan keterampilan HTML, CSS, dan JavaScript untuk membuat prototype pengajuan desain website.",
+          "Create Prototype website design submissions / web forms by conducting research and analyzing user needs and collecting feedback from users, as well as applying HTML, CSS, and JavaScript skills to create prototype website design submissions.",
       },
       {
         id: 3,
         description:
-          "Mengelola source code menggunakan tool GIT & GitHub agar dapat berkolaborasi antar tim dan mengelola repositori dengan baik dan benar.",
+          "Manage source code using GIT & GitHub tools in order to collaborate between teams and manage repositories properly.",
       },
       {
         id: 4,
         description:
-          "Melakukan uji coba untuk memastikan tampilan website berfungsi dengan baik.",
+          "Conduct tests to ensure the website display is functioning properly.",
       },
       {
         id: 5,
         description:
-          "Mendaftarkan website ke layanan hosting dan melakukan restore data website jika terjadi masalah.",
+          "Registering the website to the hosting service and restoring the website data if a problem occurs.",
       },
     ],
   },
@@ -137,22 +137,22 @@ export const exp = [
       {
         id: 1,
         description:
-          "Memastikan pelanggan mendapatkan pelayanan yang ramah dan profesional selama kunjungan mereka di restoran.",
+          "Ensure customers receive friendly and professional service during their visit at the restaurant.",
       },
       {
         id: 2,
         description:
-          "Bertanggung jawab untuk mencatat dengan akurat pesanan pelanggan dan mengkomunikasikannya ke dapur atau bar sesuai prosedur.",
+          "Responsible for accurately recording customer orders and communicating them to the kitchen or bar according to procedures.",
       },
       {
         id: 3,
         description:
-          "Melibatkan tugas-tugas seperti membersihkan meja, menyediakan peralatan makan yang bersih, dan menjaga kebersihan area kerja untuk menciptakan lingkungan bersih dan nyaman.",
+          "This involves tasks such as cleaning tables, providing clean tableware, and keeping the work area clean to create a clean and comfortable environment.",
       },
       {
         id: 4,
         description:
-          "Mengelola transaksi pembayaran dengan akurat, memberikan tagihan kepada pelanggan, dan memberikan kembalian dengan tepat waktu.",
+          "Manage payment transactions accurately, provide bills to customers, and give change in a timely manner.",
       },
     ],
   },
@@ -163,28 +163,28 @@ export const portfolio = [
     id: 1,
     img: portfolio1,
     title: "UI/UX Planet Burger",
-    desc: "Implementasi tugas project pembuatan UI website planet burger pada saat magang di Baraka Solution",
+    desc: "Implementation of the project task of creating a planet burger website UI during an internship at Baraka Solution",
     link: "https://www.figma.com/proto/YvxnkuoZ278fq4YZXrPMCv/Tugas-Project-UI-(RubicWeb---Seinki)?node-id=1-2&scaling=scale-down",
   },
   {
     id: 2,
     img: portfolio2,
     title: "Frontend Planet Burger",
-    desc: "Implementasi tugas project pembuatan Frontend website untuk planet burger pada saat magang di Baraka Solution",
+    desc: "Implementation of the project task of creating a Frontend UI for planet burger during an internship at Baraka Solution",
     link: "https://github.com/Seinki/Project-Implementasi-Skill-Web-PlanetBurger-",
   },
   {
     id: 3,
     img: portfolio3,
     title: "CourseLy - E-Course",
-    desc: "Project pembuatan website e-learning bernama CourseLy untuk berlatih penggunaan framework React Vite",
+    desc: "An e-learning website project called CourseLy to practice using the React Vite framework.",
     link: "https://github.com/Seinki/coursely-web-course",
   },
   {
     id: 4,
     img: portfolio4,
     title: "Personal Portfolios",
-    desc: "Web personal portfolio ini akan terus dikembangkan menjadi lebih baik kedepannya.",
+    desc: "This personal web portfolio will continue to be developed for the better in the future. Thank you for visiting :)",
     link: "",
   },
 ];
