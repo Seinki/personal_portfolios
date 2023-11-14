@@ -32,6 +32,24 @@ export const navLinks = [
   },
 ];
 
+export const socialIcon = [
+  {
+    id: 1,
+    icon: "fa-brands fa-instagram",
+    link: "https://www.instagram.com/sal_seinki/",
+  },
+  {
+    id: 2,
+    icon: "fa-brands fa-linkedin",
+    link: "https://www.linkedin.com/in/seinkiannalesmana/",
+  },
+  {
+    id: 3,
+    icon: "fa-brands fa-github",
+    link: "https://github.com/Seinki",
+  },
+]
+
 export const heroImg = [
   {
     id: 1,

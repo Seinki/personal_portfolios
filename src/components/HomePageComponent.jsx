@@ -1,5 +1,6 @@
 import { Col, Container, Row } from "react-bootstrap";
 import { heroImg } from "../data/js/index";
+import { socialIcon } from "../data/js/index";
 import AboutComponent from "./AboutComponent";
 import ContactComponent from "./ContactComponent";
 import ExperienceComponent from "./ExperienceComponent";
@@ -15,11 +16,25 @@ export default function HomePageComponent() {
               <h4>Hi I&apos;m</h4>
               <h1 className="fw-bold">Seinki Anna Lesmana</h1>
               <h3 className="">IT Enthusiast</h3>
-              <p>Transitioning from Staff Warehouse to Web Development. <br />I&apos;m ready to switch careers to this field with passion and enthusiasm.</p>
+              <p>
+                Transitioning from Staff Warehouse to Web Development. <br />
+                I&apos;m ready to switch careers to this field with passion and
+                enthusiasm.
+              </p>
               <div className="social-icons">
-                <i className="fa-brands fa-instagram"></i>
-                <i className="fa-brands fa-linkedin"></i>
-                <i className="fa-brands fa-github"></i>
+                {socialIcon.map((data) => {
+                  return (
+                    <a
+                      key={data.id}
+                      href={data.link}
+                      target="_blank"
+                      rel="noreferrer"
+                      className=""
+                    >
+                      <i className={data.icon}></i>
+                    </a>
+                  );
+                })}
               </div>
               <div className="buttons">
                 <button className="btn fs-5 rounded-5">
