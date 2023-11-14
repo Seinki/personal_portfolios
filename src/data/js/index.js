@@ -44,19 +44,19 @@ export const cards = [
     id: 1,
     title: "IT Support",
     icon: "fa-solid fa-computer",
-    desc: "Some quick example text to build on the card title and make up the bulk of the card%apos;s content.",
+    desc: "To provides technical support and solutions to information technology-related problems to end users globally. Includes customer service, hardware and software troubleshooting, installation, network configuration, and system maintenance.",
   },
   {
     id: 2,
     title: "Web Development",
     icon: "fa-solid fa-code",
-    desc: "Some quick example text to build on the card title and make up the bulk of the card%apos;s content.",
+    desc: "To design, develop and maintain websites. Involves programming, responsive user interface, and handling site functions, with a focus on understanding user needs, security, and optimal performance that follows industry standards and the latest trends.",
   },
   {
     id: 3,
     title: "Cyber Security",
     icon: "fa-solid fa-shield-halved",
-    desc: "Some quick example text to build on the card title and make up the bulk of the card%apos;s content.",
+    desc: "To identify and evaluate potential security gaps in computer systems and networks to prevent cyber-attacks. Particularly on penetration testing, attack simulation, risk analysis to identify potential vulnerabilities that can be exploited by attackers.",
   },
 ];
 

@@ -101,6 +101,10 @@
   text-align: center;
   padding: 1rem;
 }
+
+.cards .card-body .card-text {
+  font-size: 12px;
+}
 /* About Style */
 
 /* Experiences Style  */

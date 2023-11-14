@@ -65,9 +65,6 @@ export default function AboutComponent() {
                       <Card.Title className="text-center p-2">
                         {data.title}
                       </Card.Title>
-                      <Card.Subtitle className="mb-2 text-muted">
-                        {data.tools}
-                      </Card.Subtitle>
                       <Card.Text className="p-3 pt-0 text-center">
                         {data.desc}
                       </Card.Text>
