@@ -46,6 +46,38 @@
   padding-top: 6rem;
 }
 
+.home-page h4 {
+  animation-duration: 1s;
+}
+.home-page h1 {
+  animation-delay: 1s;
+}
+.home-page h3 {
+  animation-delay: 1.5s;
+}
+.home-page p {
+  animation-delay: 2s;
+}
+
+.detik-1 {
+  animation-delay: 2.5s;
+}
+.detik-2 {
+  animation-delay: 2.7s;
+}
+.detik-3 {
+  animation-delay: 2.9s;
+}
+
+.home-page .buttons button {
+  animation-delay: 3.1s;
+}
+
+.home-page img {
+  /* animation-delay: 3s; */
+  animation-duration: 3s;
+}
+
 .home-page .row:nth-child(1) .col:nth-child(1) {
   padding-top: 4rem;
 }
