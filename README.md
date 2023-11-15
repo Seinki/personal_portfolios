@@ -1,8 +1,57 @@
-# React + Vite
+<h1 align="center">Welcome to my Portfolio 👋</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🏠 [Homepage](https://personal-portfolios-dq0b551je-seinki-anna-lesmanas-projects.vercel.app/)
 
-Currently, two official plugins are available:
+## ✨ [Demo](https://personal-portfolios-dq0b551je-seinki-anna-lesmanas-projects.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<br>
+
+## Tech Stack
+
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
+
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://link-to-project
+```
+
+Go to the project directory
+
+```bash
+  cd my-project
+```
+
+Install dependencies
+
+```bash
+  yarn install
+```
+
+Start the server
+
+```bash
+  yarn dev
+```
+
+## Author
+
+<a href = "https://github.com/Tanu-N-Prabhu/Python/graphs/contributors">
+  <img src = "src\\assets\\avatar.jpg" style="border-radius: 50%; width: 100px; height: 100px;"/>
+</a>
+
+<br>
+
+👤 **Seinki**
+
+- Website: https://personal-portfolios-dq0b551je-seinki-anna-lesmanas-projects.vercel.app/
+- Instagram: [@sal_seinki](https://www.instagram.com/sal_seinki/)
+- Github: [@Seinki](https://github.com/Seinki)
+- LinkedIn: [Seinki Anna Lesmana](https://www.linkedin.com/in/seinkiannalesmana/)
+
+## Show your support
+
+Please give me your feedback, so that I can keep improving🔥
