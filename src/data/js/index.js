@@ -36,16 +36,19 @@ export const socialIcon = [
   {
     id: 1,
     icon: "fa-brands fa-instagram",
+    duration: "detik-1",
     link: "https://www.instagram.com/sal_seinki/",
   },
   {
     id: 2,
     icon: "fa-brands fa-linkedin",
+    duration: "detik-2",
     link: "https://www.linkedin.com/in/seinkiannalesmana/",
   },
   {
     id: 3,
     icon: "fa-brands fa-github",
+    duration: "detik-3",
     link: "https://github.com/Seinki",
   },
 ]
@@ -60,18 +63,21 @@ export const heroImg = [
 export const cards = [
   {
     id: 1,
+    aosDuration: "1000",
     title: "IT Support",
     icon: "fa-solid fa-computer",
     desc: "To provides technical support and solutions to information technology-related problems to end users globally. Includes customer service, hardware and software troubleshooting, installation, network configuration, and system maintenance.",
   },
   {
     id: 2,
+    aosDuration: "2000",
     title: "Web Development",
     icon: "fa-solid fa-code",
     desc: "To design, develop and maintain websites. Involves programming, responsive user interface, and handling site functions, with a focus on understanding user needs, security, and optimal performance that follows industry standards and the latest trends.",
   },
   {
     id: 3,
+    aosDuration: "3000",
     title: "Cyber Security",
     icon: "fa-solid fa-shield-halved",
     desc: "To identify and evaluate potential security gaps in computer systems and networks to prevent cyber-attacks. Particularly on penetration testing, attack simulation, risk analysis to identify potential vulnerabilities that can be exploited by attackers.",
@@ -180,6 +186,7 @@ export const portfolio = [
   {
     id: 1,
     img: portfolio1,
+    aosDuration: "",
     title: "UI/UX Planet Burger",
     desc: "Implementation of the project task of creating a planet burger website UI during an internship at Baraka Solution",
     link: "https://www.figma.com/proto/YvxnkuoZ278fq4YZXrPMCv/Tugas-Project-UI-(RubicWeb---Seinki)?node-id=1-2&scaling=scale-down",
@@ -187,6 +194,7 @@ export const portfolio = [
   {
     id: 2,
     img: portfolio2,
+    aosDuration: "1000",
     title: "Frontend Planet Burger",
     desc: "Implementation of the project task of creating a Frontend UI for planet burger during an internship at Baraka Solution",
     link: "https://github.com/Seinki/Project-Implementasi-Skill-Web-PlanetBurger-",
@@ -194,6 +202,7 @@ export const portfolio = [
   {
     id: 3,
     img: portfolio3,
+    aosDuration: "2000",
     title: "CourseLy - E-Course",
     desc: "An e-learning website project called CourseLy to practice using the React Vite framework.",
     link: "https://github.com/Seinki/coursely-web-course",
@@ -201,6 +210,7 @@ export const portfolio = [
   {
     id: 4,
     img: portfolio4,
+    aosDuration: "3000",
     title: "Personal Portfolios",
     desc: "This personal web portfolio will continue to be developed for the better in the future. Thank you for visiting :)",
     link: "",
