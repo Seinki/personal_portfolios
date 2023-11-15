@@ -11,7 +11,7 @@ export default function HomePageComponent() {
     <>
       <div className="home-page min-vh-100">
         <Container>
-          <Row className="row-cols-2 d-flex justify-content-between align-items-center">
+          <Row className="row-cols-1 row-cols-lg-2 d-flex justify-content-between align-items-center">
             <Col>
               <h4 className="animate__animated animate__fadeInUp">
                 Hi I&apos;m
@@ -48,15 +48,21 @@ export default function HomePageComponent() {
                     href="https://drive.google.com/file/d/1kG-CzT-DzkasVbg_6k8j5QKDde3jhzTc/view?usp=sharing"
                     target="_blank"
                     rel="noopener noreferrer"
-                  >
-                    Hire Me
-                  </a>
+                  ></a>
+                  Hire Me
                 </button>
               </div>
             </Col>
             <Col>
               {heroImg.map((data) => {
-                return <img key={data.id} src={data.image} alt="hero-img" className="animate__animated animate__fadeInRight"/>;
+                return (
+                  <img
+                    key={data.id}
+                    src={data.image}
+                    alt="hero-img"
+                    className="animate__animated animate__fadeInRight"
+                  />
+                );
               })}
             </Col>
           </Row>

@@ -69,7 +69,7 @@ export default function AboutComponent() {
           </Col>
         </Row>
         <Row>
-          <Col className="pt-3 d-flex gap-3">
+          <Col className="pt-3 d-lg-flex">
             {cards.map((data) => {
               return (
                 <div

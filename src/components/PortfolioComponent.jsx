@@ -20,7 +20,7 @@ export default function PortfolioComponent() {
           </Col>
         </Row>
         <Row className="p-5">
-          <Col className="d-flex row-cols-4">
+          <Col className="d-lg-flex">
             {portfolio.map((data) => {
               return (
                 <div

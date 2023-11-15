@@ -21,16 +21,16 @@ export default function NavbarComponent() {
   });
 
   return (
-    <div className="navbar-page">
+    <div>
       <Navbar
         fixed="top"
         expand="lg"
         className={`${
           changeColor ? "color-active" : ""
-        } pb-2 pt-2 text-white shadow`}
+        } p-3 text-white shadow`}
       >
         <Container>
-          <Navbar.Brand href="#home" className="fw-bold fs-3 text-white">
+          <Navbar.Brand href="#home" className="fw-bold fs-3">
             SeinkiAL
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -53,7 +53,6 @@ export default function NavbarComponent() {
               })}
             </Nav>
           </Navbar.Collapse>
-          <div className="dark-mode"></div>
         </Container>
       </Navbar>
     </div>
