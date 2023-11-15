@@ -39,7 +39,15 @@ export default function NavbarComponent() {
               {navLinks.map((link) => {
                 return (
                   <div className="nav-link" key={link.id}>
-                    <NavLink to={link.path}>{link.text}</NavLink>
+                    <NavLink
+                      to={link.path}
+                      className={({ isActive, isPending }) =>
+                        isPending ? "pending" : isActive ? "active" : ""
+                      }
+                      end
+                    >
+                      {link.text}
+                    </NavLink>
                   </div>
                 );
               })}
