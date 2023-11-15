@@ -1,8 +1,8 @@
 <h1 align="center">Welcome to my Portfolio 👋</h1>
 
-## 🏠 [Homepage](https://personal-portfolios-dq0b551je-seinki-anna-lesmanas-projects.vercel.app/)
+## 🏠 [Homepage](https://personal-portfolios.vercel.app/)
 
-## ✨ [Demo](https://personal-portfolios-dq0b551je-seinki-anna-lesmanas-projects.vercel.app/)
+## ✨ [Demo](https://personal-portfolios.vercel.app/)
 
 <br>
 
@@ -47,7 +47,7 @@ Start the server
 
 👤 **Seinki**
 
-- Website: https://personal-portfolios-dq0b551je-seinki-anna-lesmanas-projects.vercel.app/
+- Website: https://personal-portfolios.vercel.app/
 - Instagram: [@sal_seinki](https://www.instagram.com/sal_seinki/)
 - Github: [@Seinki](https://github.com/Seinki)
 - LinkedIn: [Seinki Anna Lesmana](https://www.linkedin.com/in/seinkiannalesmana/)
