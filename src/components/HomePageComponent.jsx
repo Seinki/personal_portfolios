@@ -43,14 +43,15 @@ export default function HomePageComponent() {
                 })}
               </div>
               <div className="buttons">
-                <button className="btn fs-5 rounded-5 animate__animated animate__fadeIn">
-                  <a
-                    href="https://drive.google.com/file/d/1kG-CzT-DzkasVbg_6k8j5QKDde3jhzTc/view?usp=sharing"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  ></a>
-                  Hire Me
-                </button>
+                <a
+                  href="https://drive.google.com/file/d/1kG-CzT-DzkasVbg_6k8j5QKDde3jhzTc/view?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="btn fs-5 rounded-5 animate__animated animate__fadeIn">
+                    Hire Me
+                  </button>
+                </a>
               </div>
             </Col>
             <Col>
