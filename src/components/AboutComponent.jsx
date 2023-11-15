@@ -1,5 +1,9 @@
 import { Card, Col, Container, Row } from "react-bootstrap";
 import { cards } from "../data/js/index";
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
+// ..
+AOS.init();
 
 export default function AboutComponent() {
   return (
@@ -7,19 +11,25 @@ export default function AboutComponent() {
       <Container>
         <Row>
           <Col>
-            <h1 className="fw-bold text-center pb-5">About Me</h1>
+            <h1
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              className="fw-bold text-center pb-5"
+            >
+              About Me
+            </h1>
           </Col>
         </Row>
         <Row>
           <Col className="text-center">
-            <p>
+            <p data-aos="fade-right" data-aos-duration="1000">
               I am a Warehouse Staff with over 2 years of experience in the
               logistics industry. I have expertise in operating scanning tools
               specialized in courier logistics. During my career, I have
               successfully helped make BDO branches into branches with better
               work performance results compared to other BDO branches.
             </p>
-            <p>
+            <p data-aos="fade-left" data-aos-duration="1000">
               I am very passionate and enthusiastic about deepening my knowledge
               in IT, especially programming and cybersecurity. With my strong
               background in Computer and Network Engineering, I am committed to
@@ -31,7 +41,7 @@ export default function AboutComponent() {
               profile. By understanding the basics, we can achieve the desired
               goal or result.
             </p>
-            <p>
+            <p data-aos="fade-right" data-aos-duration="1000">
               In addition, I am very enthusiastic about current technological
               developments and I am always exploring. I love collaborating with
               passionate people who have the vision to always be up-to-date in
@@ -40,7 +50,7 @@ export default function AboutComponent() {
               you are interested in connecting or discussing further, please
               feel free to message me.
             </p>
-            <p>
+            <p data-aos="fade-left" data-aos-duration="1000">
               Thank you for your visit to my personal portfolios. I look forward
               to contributing to achieving common goals and building meaningful
               connections on LinkedIn.
@@ -49,14 +59,25 @@ export default function AboutComponent() {
         </Row>
         <Row>
           <Col>
-            <h2 className="fw-bold">Specialized in</h2>
+            <h2
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              className="fw-bold"
+            >
+              Specialized in
+            </h2>
           </Col>
         </Row>
         <Row>
           <Col className="pt-3 d-flex gap-3">
             {cards.map((data) => {
               return (
-                <div className="cards" key={data.id}>
+                <div
+                  data-aos="flip-right"
+                  data-aos-duration={data.aosDuration}
+                  className="cards"
+                  key={data.id}
+                >
                   <Card style={{ width: "20rem" }} className="shadow">
                     <Card.Body>
                       <div className="card-icon">

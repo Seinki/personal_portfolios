@@ -5,6 +5,10 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { Col, Container, Row } from "react-bootstrap";
 import { portfolio } from "../data/js/index";
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
+// ..
+AOS.init();
 
 export default function PortfolioComponent() {
   return (
@@ -12,14 +16,19 @@ export default function PortfolioComponent() {
       <Container>
         <Row>
           <Col>
-            <h1 className="fw-bold text-center pb-5">My Portfolios</h1>
+            <h1 data-aos="fade-up" data-aos-duration="1000" className="fw-bold text-center pb-5">My Portfolios</h1>
           </Col>
         </Row>
         <Row className="p-5">
           <Col className="d-flex row-cols-4">
             {portfolio.map((data) => {
               return (
-                <div className="cards-porto" key={data.id}>
+                <div
+                  data-aos="zoom-in"
+                  data-aos-duration={data.aosDuration}
+                  className="cards-porto"
+                  key={data.id}
+                >
                   <Card sx={{ maxWidth: 345 }}>
                     <CardActionArea>
                       <CardMedia
@@ -56,7 +65,7 @@ export default function PortfolioComponent() {
           </Col>
         </Row>
         <Row>
-          <Col className="text-center pt-5">
+          <Col data-aos="fade-right" data-aos-duration="1000" className="text-center pt-5">
             <button className="btn rounded-5">
               <a
                 className="text-decoration-none"

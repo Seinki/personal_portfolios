@@ -1,5 +1,9 @@
 import { useState } from "react";
 import { Col, Container, Form, Row } from "react-bootstrap";
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
+// ..
+AOS.init();
 
 export default function ContactComponent() {
   const [name, setName] = useState("");
@@ -8,11 +12,11 @@ export default function ContactComponent() {
       <Container>
         <Row className="p-5 m-auto d-flex align-items-center justify-content-center">
           <Col>
-            <h1 className="fw-bold text-center">Contact Me</h1>
+            <h1 data-aos="fade-up" data-aos-duration="1000" className="fw-bold text-center">Contact Me</h1>
           </Col>
         </Row>
         <Row className="pt-5">
-          <Col>
+          <Col data-aos="fade-right" data-aos-duration="1000">
             <div className="contact-form">
               <Form inputStyle={{ borderColor: "transparent" }}>
                 <Form.Group
@@ -43,7 +47,7 @@ export default function ContactComponent() {
               </Form>
             </div>
           </Col>
-          <Col className="contact-info">
+          <Col data-aos="fade-left" data-aos-duration="1000" className="contact-info">
             <div className="address">
               <h6 className="fw-bold fs-5"><i className="fa-solid fa-house"></i> Address</h6>
               <p>Cicaheum, Kiaracondong, Kota Bandung, Jawa Barat, Indonesia</p>

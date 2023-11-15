@@ -1,5 +1,9 @@
 import { Accordion, Col, Container, Row } from "react-bootstrap";
 import { exp } from "../data/js/index";
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
+// ..
+AOS.init();
 
 export default function ExperienceComponent() {
   return (
@@ -7,14 +11,25 @@ export default function ExperienceComponent() {
       <Container>
         <Row>
           <Col>
-            <h1 className="fw-bold text-center">My Experiences</h1>
+            <h1
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              className="fw-bold text-center"
+            >
+              My Experiences
+            </h1>
           </Col>
         </Row>
         <Row className="row-cols-1 pt-5">
           <Col>
             {exp.map((data) => {
               return (
-                <div className="accordions" key={data.id}>
+                <div
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  className="accordions"
+                  key={data.id}
+                >
                   <Accordion
                     defaultActiveKey={data.defaultActiveKey}
                     className="p-2"

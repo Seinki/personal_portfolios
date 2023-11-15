@@ -13,10 +13,16 @@ export default function HomePageComponent() {
         <Container>
           <Row className="row-cols-2 d-flex justify-content-between align-items-center">
             <Col>
-              <h4>Hi I&apos;m</h4>
-              <h1 className="fw-bold">Seinki Anna Lesmana</h1>
-              <h3 className="">IT Enthusiast</h3>
-              <p>
+              <h4 className="animate__animated animate__fadeInUp">
+                Hi I&apos;m
+              </h4>
+              <h1 className="animate__animated animate__fadeInUp fw-bold">
+                Seinki Anna Lesmana
+              </h1>
+              <h3 className="animate__animated animate__fadeInUp">
+                IT Enthusiast
+              </h3>
+              <p className="animate__animated animate__fadeInUp">
                 Transitioning from Staff Warehouse to Web Development. <br />
                 I&apos;m ready to switch careers to this field with passion and
                 enthusiasm.
@@ -29,7 +35,7 @@ export default function HomePageComponent() {
                       href={data.link}
                       target="_blank"
                       rel="noreferrer"
-                      className=""
+                      className={`animate__animated animate__fadeInUp ${data.duration}`}
                     >
                       <i className={data.icon}></i>
                     </a>
@@ -37,7 +43,7 @@ export default function HomePageComponent() {
                 })}
               </div>
               <div className="buttons">
-                <button className="btn fs-5 rounded-5">
+                <button className="btn fs-5 rounded-5 animate__animated animate__fadeIn">
                   <a
                     href="https://drive.google.com/file/d/1kG-CzT-DzkasVbg_6k8j5QKDde3jhzTc/view?usp=sharing"
                     target="_blank"
@@ -50,7 +56,7 @@ export default function HomePageComponent() {
             </Col>
             <Col>
               {heroImg.map((data) => {
-                return <img key={data.id} src={data.image} alt="hero-img" />;
+                return <img key={data.id} src={data.image} alt="hero-img" className="animate__animated animate__fadeInRight"/>;
               })}
             </Col>
           </Row>
