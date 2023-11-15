@@ -19,10 +19,10 @@ export default function HandleResponseContact() {
             </h1>
           </Col>
         </Row>
-        <Row className="pt-5">
+        <Row className="message-text">
           <Col data-aos="zoom-in" data-aos-duration="1000">
             <h3 className="text-center fw-bold">❤️ Thank You ❤️</h3>
-            <p className="text-center">Your message has been sent.</p>
+            <p className="text-center">Your message or feedback has been sent.</p>
           </Col>
         </Row>
       </Container>
