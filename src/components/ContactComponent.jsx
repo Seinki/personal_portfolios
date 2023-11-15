@@ -4,14 +4,14 @@ import { Col, Container, Form, Row } from "react-bootstrap";
 import { useForm, ValidationError } from "@formspree/react";
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
-import HandleContact from "./HandleContact";
+import HandleResponseContact from "./HandleResponseContact";
 // ..
 AOS.init();
 
 export default function ContactComponent() {
   const [state, handleSubmit] = useForm("xknlarow");
   if (state.succeeded) {
-    return <HandleContact />
+    return <HandleResponseContact />
   }
 
   return (
