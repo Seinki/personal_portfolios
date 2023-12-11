@@ -4,7 +4,7 @@ import { Col, Container, Form, Row } from "react-bootstrap";
 import { useForm, ValidationError } from "@formspree/react";
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
-import HandleResponseContact from "./HandleResponseContact";
+import HandleResponseContact from "../pages/HandleResponseContact";
 // ..
 AOS.init();
 
