@@ -27,7 +27,7 @@ export default function NavbarComponent() {
         expand="lg"
         className={`${
           changeColor ? "color-active" : ""
-        } p-3 text-white shadow`}
+        } p-3 text-white`}
       >
         <Container>
           <Navbar.Brand href="#home" className="fw-bold fs-3">
