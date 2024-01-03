@@ -2,6 +2,7 @@ import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 import { Card, Col, Container, Row } from "react-bootstrap";
 import { cards, tools1, tools2, tools3 } from "../data/js/index";
+import aboutImg from "../assets/img/about-img.png"
 // ..
 AOS.init();
 
@@ -23,7 +24,7 @@ export default function AboutComponent() {
         <Row>
           <Col className="col-5 justify-content-center align-items-center">
             <img
-              src="/src/assets/img/about-img.png"
+              src={aboutImg}
               alt="about-img"
               title="about-img"
               data-aos="fade-right"
