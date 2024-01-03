@@ -3,7 +3,7 @@
 }
 
 :root {
-  --blue-color: #2596EB;
+  --blue-color: #2596eb;
   --dark-blue: #1e79be;
   --gray-color: #dbdbdb;
   --black-color: rgb(3 7 18);
@@ -26,9 +26,9 @@
   /* background-color: var(--blue-color); */
   transition: all 0.5s ease;
   color: white;
-  box-shadow: 0px 1px 15px 0px rgba(0,0,0,0.75);
--webkit-box-shadow: 0px 1px 15px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 1px 15px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 1px 15px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 1px 15px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 1px 15px 0px rgba(0, 0, 0, 0.75);
 }
 
 /* .color-active .navbar-brand {
@@ -171,6 +171,7 @@
 
 .cards {
   display: flex;
+  /* flex-wrap: wrap; */
   align-items: center;
   justify-content: center;
   padding: 1.5rem;
@@ -183,6 +184,14 @@
 
 .cards .card-body .card-text {
   font-size: 12px;
+}
+
+.tools li {
+  list-style-type: none;
+}
+
+.icon-tools {
+  width: 100px;
 }
 
 @media screen and (max-width: 576px) {
@@ -301,13 +310,13 @@
   color: rgb(207, 207, 207);
 }
 
-.contact-info .address{
+.contact-info .address {
   padding-bottom: 1rem;
 }
-.contact-info .phone{
+.contact-info .phone {
   padding-bottom: 1rem;
 }
-.contact-info .emails{
+.contact-info .emails {
   padding-bottom: 1rem;
 }
 
@@ -321,7 +330,7 @@
     padding-top: 3rem;
   }
 
-  .message-response .message-text{
+  .message-response .message-text {
     padding-top: 12rem;
   }
 }

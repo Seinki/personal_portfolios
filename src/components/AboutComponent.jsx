@@ -1,7 +1,7 @@
-import { Card, Col, Container, Row } from "react-bootstrap";
-import { cards } from "../data/js/index";
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
+import { Card, Col, Container, Row } from "react-bootstrap";
+import { cards, tools1, tools2, tools3 } from "../data/js/index";
 // ..
 AOS.init();
 
@@ -57,8 +57,8 @@ export default function AboutComponent() {
             </p>
           </Col>
         </Row>
-        <Row>
-          <Col>
+        <Row className="mt-5">
+          <Col className="">
             <h2
               data-aos="fade-right"
               data-aos-duration="1000"
@@ -67,9 +67,18 @@ export default function AboutComponent() {
               Specialized in
             </h2>
           </Col>
+          {/* <Col className="col-6 pt-5">
+            <h2
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              className="fw-bold"
+            >
+              Tools
+            </h2>
+          </Col> */}
         </Row>
-        <Row>
-          <Col className="pt-3 d-lg-flex">
+        <Row className="d-flex">
+          <Col className="pt-3 d-flex">
             {cards.map((data) => {
               return (
                 <div
@@ -95,7 +104,84 @@ export default function AboutComponent() {
               );
             })}
           </Col>
+          {/* <Col className="col-6 pt-3">
+            {tools1.map((data) => {
+              <div className="tools" key={data.id}>
+                <ul>
+                  <li>{data.name}
+                    <img src={data.icon} alt="" />
+                  </li>
+                </ul>
+              </div>
+            })}
+          </Col> */}
         </Row>
+        <Col className="col-6 pt-5">
+          <h2
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            className="fw-bold"
+          >
+            TechStack🚀
+          </h2>
+          <h4 data-aos="fade-up"
+            data-aos-duration="1000" className="ms-5 mt-5 text-decoration-underline fw-semibold">
+            Frontend
+          </h4>
+        </Col>
+        <Col data-aos="fade-up"
+            data-aos-duration="1000" className="col-12 pt-3 d-flex flex-wrap justify-content-center align-items-center">
+          {tools1.map((data) => {
+            return (
+              <div className="tools" key={data.id}>
+                <ul>
+                  <li>
+                    <img src={data.icon} alt={data.name} title={data.name} className="icon-tools" />
+                    <p className="text-center">{data.name}</p>
+                  </li>
+                </ul>
+              </div>
+            );
+          })}
+        </Col>
+        <h4 data-aos="fade-up"
+            data-aos-duration="1000" className="ms-5 mt-5 text-decoration-underline fw-semibold">
+          Backend
+        </h4>
+        <Col data-aos="fade-up"
+            data-aos-duration="1000" className="col-12 pt-3 d-flex flex-wrap justify-content-center align-items-center">
+          {tools2.map((data) => {
+            return (
+              <div className="tools" key={data.id}>
+                <ul>
+                  <li>
+                    <img src={data.icon} alt={data.name} title={data.name} className="icon-tools" />
+                    <p className="text-center">{data.name}</p>
+                  </li>
+                </ul>
+              </div>
+            );
+          })}
+        </Col>
+        <h4 data-aos="fade-up"
+            data-aos-duration="1000" className="ms-5 mt-5 text-decoration-underline fw-semibold">
+          Others
+        </h4>
+        <Col data-aos="fade-up"
+            data-aos-duration="1000" className="col-12 pt-3 d-flex flex-wrap justify-content-center align-items-center">
+          {tools3.map((data) => {
+            return (
+              <div className="tools" key={data.id}>
+                <ul>
+                  <li>
+                    <img src={data.icon} alt={data.name} title={data.name} className="icon-tools" />
+                    <p className="text-center">{data.name}</p>
+                  </li>
+                </ul>
+              </div>
+            );
+          })}
+        </Col>
       </Container>
     </div>
   );

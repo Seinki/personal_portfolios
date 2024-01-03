@@ -1,8 +1,8 @@
-import heroimage from '../../assets/img/hero-image.png';
-import portfolio1 from '../../assets/img/portfolios/prototype-planet-burger.png';
-import portfolio2 from '../../assets/img/portfolios/ui-planet-burger.png';
-import portfolio3 from '../../assets/img/portfolios/coursely-e-course.png';
-import portfolio4 from '../../assets/img/portfolios/personal-portfolio.png';
+import heroimage from "../../assets/img/hero-image.png";
+import portfolio3 from "../../assets/img/portfolios/coursely-e-course.png";
+import portfolio4 from "../../assets/img/portfolios/personal-portfolio.png";
+import portfolio1 from "../../assets/img/portfolios/prototype-planet-burger.png";
+import portfolio2 from "../../assets/img/portfolios/ui-planet-burger.png";
 
 export const navLinks = [
   {
@@ -51,7 +51,7 @@ export const socialIcon = [
     duration: "detik-3",
     link: "https://github.com/Seinki",
   },
-]
+];
 
 export const heroImg = [
   {
@@ -81,6 +81,130 @@ export const cards = [
     title: "Cyber Security",
     icon: "fa-solid fa-shield-halved",
     desc: "To identify and evaluate potential security gaps in computer systems and networks to prevent cyber-attacks. Particularly on penetration testing, attack simulation, risk analysis to identify potential vulnerabilities that can be exploited by attackers.",
+  },
+];
+
+
+import htmlIcon from "../../assets/img/icons/frontend/html-5-svgrepo-com.svg";
+import cssIcon from "../../assets/img/icons/frontend/css-3-svgrepo-com.svg";
+import javascriptIcon from "../../assets/img/icons/frontend/javascript-svgrepo-com.svg";
+import bootstrapIcon from "../../assets/img/icons/frontend/bootstrap.svg";
+import tailwindIcon from "../../assets/img/icons/frontend/icons8-tailwind-css.svg";
+import reactIcon from "../../assets/img/icons/frontend/icons8-react.svg";
+export const tools1 = [
+  {
+    id: 1,
+    name: "HTML",
+    icon: htmlIcon,
+  },
+  {
+    id: 2,
+    name: "CSS",
+    icon: cssIcon,
+  },
+  {
+    id: 3,
+    name: "Bootstrap",
+    icon: bootstrapIcon,
+  },
+  {
+    id: 4,
+    name: "Talwind",
+    icon: tailwindIcon,
+  },
+  {
+    id: 5,
+    name: "Javascript",
+    icon: javascriptIcon,
+  },
+  {
+    id: 6,
+    name: "React.js",
+    icon: reactIcon,
+  },
+];
+
+import nodeIcon from "../../assets/img/icons/backend/icons8-node-js.svg";
+import expressIcon from "../../assets/img/icons/backend/icons8-express-js.svg";
+import javaIcon from "../../assets/img/icons/backend/icons8-java.svg";
+import pythonIcon from "../../assets/img/icons/backend/icons8-python.svg";
+import golangIcon from "../../assets/img/icons/backend/icons8-golang.svg";
+export const tools2 = [
+  {
+    id: 1,
+    name: "Node.js",
+    icon: nodeIcon,
+  },
+  {
+    id: 2,
+    name: "Express.js",
+    icon: expressIcon,
+  },
+  {
+    id: 3,
+    name: "Java",
+    icon: javaIcon,
+  },
+  {
+    id: 4,
+    name: "Python",
+    icon: pythonIcon,
+  },
+  {
+    id: 5,
+    name: "Golang",
+    icon: golangIcon,
+  },
+];
+
+import gitIcon from "../../assets/img/icons/others/icons8-git.svg";
+import githubIcon from "../../assets/img/icons/others/icons8-github.svg";
+import vscodeIcon from "../../assets/img/icons/others/icons8-vs-code.svg";
+import intelijIcon from "../../assets/img/icons/others/icons8-intellij-idea.svg";
+import virtualboxIcon from "../../assets/img/icons/others/icons8-virtualbox.svg";
+import linuxIcon from "../../assets/img/icons/others/icons8-linux-96.png";
+import kalilinuxIcon from "../../assets/img/icons/others/icons8-kali-linux.svg";
+import cmdIcon from "../../assets/img/icons/others/icons8-cmd-100.png";
+export const tools3 = [
+  {
+    id: 1,
+    name: "Git",
+    icon: gitIcon,
+  },
+  {
+    id: 2,
+    name: "Github",
+    icon: githubIcon,
+  },
+  {
+    id: 3,
+    name: "VS Code",
+    icon: vscodeIcon,
+  },
+  {
+    id: 4,
+    name: "Intelij IDEA",
+    icon: intelijIcon,
+  },
+  {
+    id: 5,
+    name: "VirtualBox",
+    icon: virtualboxIcon,
+  },
+  {
+    id: 6,
+    name: "Linux",
+    icon: linuxIcon,
+  },
+  {
+    id: 7,
+    name: "Kali Linux",
+    icon: kalilinuxIcon,
+  },
+  {
+    id: 8,
+    name: "Command Prompt",
+    icon: cmdIcon,
   },
 ];
 
