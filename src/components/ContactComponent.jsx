@@ -95,6 +95,7 @@ export default function ContactComponent() {
                   href="https://wa.me/62895707749900"
                   target="_blank"
                   rel="noreferrer"
+                  className="text-decoration-underline"
                 >
                   +62 8957-0774-9900
                 </a>
@@ -109,6 +110,7 @@ export default function ContactComponent() {
                   href="mailto:seinkiannalesmana00@gmail.com"
                   target="_blank"
                   rel="noreferrer"
+                  className="text-decoration-underline"
                 >
                   seinkiannalesmana00@gmail.com
                 </a>

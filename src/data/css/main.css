@@ -302,11 +302,13 @@
 }
 .phone p a:hover {
   text-decoration: none;
-  color: rgb(177, 177, 177);
+  color: var(--blue-color);
+  transition: all 0.3s ease-in-out;
 }
 .emails p a:hover {
   text-decoration: none;
-  color: rgb(177, 177, 177);
+  color: var(--blue-color);
+  transition: all 0.3s ease-in-out;
 }
 
 .contact-page button {
