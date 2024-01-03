@@ -21,15 +21,25 @@ export default function AboutComponent() {
           </Col>
         </Row>
         <Row>
-          <Col className="text-center">
-            <p data-aos="fade-right" data-aos-duration="1000">
+          <Col className="col-5 justify-content-center align-items-center">
+            <img
+              src="/src/assets/img/about-img.png"
+              alt="about-img"
+              title="about-img"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              className="about-img"
+            />
+          </Col>
+          <Col className="col-7 text-center">
+            <p data-aos="fade-up" data-aos-duration="1000">
               I am a Warehouse Staff with over 2 years of experience in the
               logistics industry. I have expertise in operating scanning tools
               specialized in courier logistics. During my career, I have
               successfully helped make BDO branches into branches with better
               work performance results compared to other BDO branches.
             </p>
-            <p data-aos="fade-left" data-aos-duration="1000">
+            <p data-aos="fade-up" data-aos-duration="1000">
               I am very passionate and enthusiastic about deepening my knowledge
               in IT, especially programming and cybersecurity. With my strong
               background in Computer and Network Engineering, I am committed to
@@ -41,7 +51,7 @@ export default function AboutComponent() {
               profile. By understanding the basics, we can achieve the desired
               goal or result.
             </p>
-            <p data-aos="fade-right" data-aos-duration="1000">
+            <p data-aos="fade-up" data-aos-duration="1000">
               In addition, I am very enthusiastic about current technological
               developments and I am always exploring. I love collaborating with
               passionate people who have the vision to always be up-to-date in
@@ -50,7 +60,7 @@ export default function AboutComponent() {
               you are interested in connecting or discussing further, please
               feel free to message me.
             </p>
-            <p data-aos="fade-left" data-aos-duration="1000">
+            <p data-aos="fade-up" data-aos-duration="1000">
               Thank you for your visit to my personal portfolios. I look forward
               to contributing to achieving common goals and building meaningful
               connections on LinkedIn.
@@ -124,19 +134,30 @@ export default function AboutComponent() {
           >
             TechStack🚀
           </h2>
-          <h4 data-aos="fade-up"
-            data-aos-duration="1000" className="ms-5 mt-5 text-decoration-underline fw-semibold">
+          <h4
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            className="ms-5 mt-5 text-decoration-underline fw-semibold"
+          >
             Frontend
           </h4>
         </Col>
-        <Col data-aos="fade-up"
-            data-aos-duration="1000" className="col-12 pt-3 d-flex flex-wrap justify-content-center align-items-center">
+        <Col
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          className="col-12 pt-3 d-flex flex-wrap justify-content-center align-items-center"
+        >
           {tools1.map((data) => {
             return (
               <div className="tools" key={data.id}>
                 <ul>
                   <li>
-                    <img src={data.icon} alt={data.name} title={data.name} className="icon-tools" />
+                    <img
+                      src={data.icon}
+                      alt={data.name}
+                      title={data.name}
+                      className="icon-tools"
+                    />
                     <p className="text-center">{data.name}</p>
                   </li>
                 </ul>
@@ -144,18 +165,29 @@ export default function AboutComponent() {
             );
           })}
         </Col>
-        <h4 data-aos="fade-up"
-            data-aos-duration="1000" className="ms-5 mt-5 text-decoration-underline fw-semibold">
+        <h4
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          className="ms-5 mt-5 text-decoration-underline fw-semibold"
+        >
           Backend
         </h4>
-        <Col data-aos="fade-up"
-            data-aos-duration="1000" className="col-12 pt-3 d-flex flex-wrap justify-content-center align-items-center">
+        <Col
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          className="col-12 pt-3 d-flex flex-wrap justify-content-center align-items-center"
+        >
           {tools2.map((data) => {
             return (
               <div className="tools" key={data.id}>
                 <ul>
                   <li>
-                    <img src={data.icon} alt={data.name} title={data.name} className="icon-tools" />
+                    <img
+                      src={data.icon}
+                      alt={data.name}
+                      title={data.name}
+                      className="icon-tools"
+                    />
                     <p className="text-center">{data.name}</p>
                   </li>
                 </ul>
@@ -163,18 +195,29 @@ export default function AboutComponent() {
             );
           })}
         </Col>
-        <h4 data-aos="fade-up"
-            data-aos-duration="1000" className="ms-5 mt-5 text-decoration-underline fw-semibold">
+        <h4
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          className="ms-5 mt-5 text-decoration-underline fw-semibold"
+        >
           Others
         </h4>
-        <Col data-aos="fade-up"
-            data-aos-duration="1000" className="col-12 pt-3 d-flex flex-wrap justify-content-center align-items-center">
+        <Col
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          className="col-12 pt-3 d-flex flex-wrap justify-content-center align-items-center"
+        >
           {tools3.map((data) => {
             return (
               <div className="tools" key={data.id}>
                 <ul>
                   <li>
-                    <img src={data.icon} alt={data.name} title={data.name} className="icon-tools" />
+                    <img
+                      src={data.icon}
+                      alt={data.name}
+                      title={data.name}
+                      className="icon-tools"
+                    />
                     <p className="text-center">{data.name}</p>
                   </li>
                 </ul>
