@@ -1,4 +1,5 @@
 * {
+  overflow: overlay;
   font-family: "Poppins", sans-serif;
 }
 
@@ -53,6 +54,13 @@
 
 .navbar .nav-link .active:hover {
   color: rgb(165, 165, 165);
+}
+
+@media screen and (max-width: 996px) {
+  /* .navbar-toggler {
+    display: flex;
+    flex-wrap: wrap;
+  } */
 }
 
 @media screen and (max-width: 575px) {
@@ -206,6 +214,10 @@
   .about-img {
     display: none;
   }
+
+  .icon-tools {
+    width: 75px;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -341,7 +353,10 @@
   padding-bottom: 10rem;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 996px) {
+  .contact-page .row {
+    display: grid;
+  }
   .contact-page .row:nth-child(2) .col:nth-child(2) {
     padding-left: 1rem;
     padding-top: 3rem;
