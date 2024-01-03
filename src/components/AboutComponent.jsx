@@ -2,7 +2,7 @@ import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 import { Card, Col, Container, Row } from "react-bootstrap";
 import { cards, tools1, tools2, tools3 } from "../data/js/index";
-import aboutImg from "../assets/img/about-img.png"
+import aboutImg from "../assets/img/about-img.png";
 // ..
 AOS.init();
 
@@ -22,7 +22,7 @@ export default function AboutComponent() {
           </Col>
         </Row>
         <Row>
-          <Col className="col-5 justify-content-center align-items-center">
+          <Col className="col-12 col-lg-5 justify-content-center align-items-center">
             <img
               src={aboutImg}
               alt="about-img"
@@ -32,7 +32,7 @@ export default function AboutComponent() {
               className="about-img"
             />
           </Col>
-          <Col className="col-7 text-center">
+          <Col className="col-12 col-lg-5 text-center">
             <p data-aos="fade-up" data-aos-duration="1000">
               I am a Warehouse Staff with over 2 years of experience in the
               logistics industry. I have expertise in operating scanning tools
@@ -89,7 +89,7 @@ export default function AboutComponent() {
           </Col> */}
         </Row>
         <Row className="d-flex">
-          <Col className="pt-3 d-flex">
+          <Col className="pt-3 d-flex flex-wrap justify-content-center align-items-center">
             {cards.map((data) => {
               return (
                 <div

@@ -202,11 +202,18 @@
   width: 100px;
 }
 
+@media screen and (max-width: 996px) {
+  .about-img {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 576px) {
   .about-page .row:nth-child(4) .col:nth-child(4) .cards .card {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
+  
 }
 /* About Style */
 

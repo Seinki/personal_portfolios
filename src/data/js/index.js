@@ -203,7 +203,7 @@ export const tools3 = [
   },
   {
     id: 8,
-    name: "Command Prompt",
+    name: "CMD",
     icon: cmdIcon,
   },
 ];
