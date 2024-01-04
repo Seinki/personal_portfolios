@@ -32,7 +32,7 @@ export default function AboutComponent() {
               className="about-img"
             />
           </Col>
-          <Col className="col-12 col-lg-5 text-center">
+          <Col className="col-12 col-lg-7 text-center">
             <p data-aos="fade-up" data-aos-duration="1000">
               I am a Warehouse Staff with over 2 years of experience in the
               logistics industry. I have expertise in operating scanning tools
