@@ -18,12 +18,11 @@ export default function NavbarComponent() {
   useEffect(() => {
     changeBackgroundcolor();
     window.addEventListener("scroll", changeBackgroundcolor);
-  });
+  }, []);
 
   return (
     <div>
       <Navbar
-        fixed="top"
         expand="lg"
         className={`${
           changeColor ? "color-active" : ""
