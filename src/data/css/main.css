@@ -10,35 +10,28 @@
   --black-color: rgb(3 7 18);
 }
 
-/* .about-page, .exp-page, .portfolio-page, .contact-page {
-  padding-top: 5rem;
-} */
-
 /* Navbar Style */
 .navbar {
-  background-color: white;
-  color: rgb(0, 0, 0);
-  /* box-shadow: 0px 21px 25px 5px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 0px 21px 25px 5px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 21px 25px 5px rgba(0, 0, 0, 0.75); */
+  background: linear-gradient(to left, #1f242b 25%, #38b6ff);
+  color: white;
 }
 
 .color-active {
   /* background-color: var(--blue-color); */
   transition: all 0.5s ease;
   color: white;
-  box-shadow: 0px 1px 15px 0px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 0px 1px 15px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 1px 15px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 1px 15px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 1px 15px 0px rgba(0, 0, 0, 0.75);
 }
 
-/* .color-active .navbar-brand {
+.navbar .navbar-brand {
   color: white;
-} */
+}
 
 .navbar .nav-link a {
   text-decoration: none;
-  color: rgb(0, 0, 0);
+  color: white;
   padding: 10px;
   gap: 5rem;
 }
@@ -49,11 +42,13 @@
 .navbar .nav-link .active {
   background-color: var(--blue-color);
   color: white;
-  /* border-radius: 1rem; */
+  border-radius: 5px;
 }
 
 .navbar .nav-link .active:hover {
+  background-color: #1f7ec7;
   color: rgb(165, 165, 165);
+  transition: all 0.1s ease-in-out;
 }
 
 @media screen and (max-width: 996px) {
@@ -72,9 +67,9 @@
 
 /* HomePage Style */
 .home-page {
-  /* background-color: rgb(3 7 18); */
-  color: rgb(0, 0, 0);
-  padding-top: 6rem;
+  background: linear-gradient(to left, #1f242b 25%, #38b6ff);
+  color: white;
+  padding-top: 2rem;
 }
 
 .home-page h4 {
@@ -124,7 +119,7 @@
   font-size: 1.5rem;
   padding-top: 0.3rem;
   text-decoration: none;
-  color: rgb(0, 0, 0);
+  color: white;
 }
 .social-icons a:hover {
   color: var(--blue-color);
@@ -139,12 +134,11 @@
 .home-page button {
   padding-left: 1rem;
   padding-right: 1rem;
-  background-color: var(--blue-color);
+  border: 1px solid white;
   color: white;
 }
 .home-page button:hover {
-  border: 1px solid black;
-  transition: all 0.5s ease;
+  transition: all 0.3s ease-in-out;
   border-radius: 1rem;
   background-color: white;
   color: black;
@@ -170,10 +164,14 @@
 
 /* About Style */
 .about-page {
-  background-color: white;
-  padding-top: 10rem;
-  margin-top: 8rem;
-  /* padding-bottom: 6rem; */
+  background: linear-gradient(to right, #1f242b 25%, #38b6ff);
+  padding-top: 25rem;
+  color: white;
+  padding-bottom: 5rem;
+}
+
+.about-page .row:nth-child(1) .col:nth-child(1) h1 {
+  padding-top: 5rem;
 }
 
 .about-page .row:nth-child(3) .col:nth-child(1) h2 {
@@ -228,14 +226,18 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
-  
 }
 /* About Style */
 
 /* Experiences Style  */
 .exp-page {
-  padding-top: 10rem;
-  margin-top: 8rem;
+  background: linear-gradient(to left, #1f242b 25%, #38b6ff);
+  padding-bottom: 5rem;
+}
+
+.exp-page h1 {
+  padding-top: 5rem;
+  color: white;
 }
 
 .exp-page .row:nth-child(2) h5 {
@@ -253,10 +255,13 @@
 
 /* Portfolio Style */
 .portfolio-page {
-  padding-top: 10rem;
-  margin-top: 8rem;
-  /* padding-top: 7rem; */
-  /* padding-bottom: 3rem; */
+  background: linear-gradient(to right, #1f242b 25%, #38b6ff);
+  padding-bottom: 5rem;
+}
+
+.portfolio-page h1 {
+  padding-top: 5rem;
+  color: white;
 }
 
 .cards-porto {
@@ -267,7 +272,7 @@
 }
 
 .cards-porto .card .card-body {
-  padding: 1rem;
+  padding: 4rem;
   transition: all 0.5s ease;
 }
 
@@ -292,17 +297,13 @@
 
 /* Contact Style */
 .contact-page {
+  background: linear-gradient(to left, #1f242b 25%, #38b6ff);
   padding-top: 10rem;
-  margin-top: 5rem;
-  /* padding-top: 8rem; */
-  /* padding-bottom: 8rem; */
+  padding-bottom: 5rem;
+  color: white;
 }
 
 .contact-form {
-  /* padding: 2rem;
-  padding-top: 5rem;
-  margin-left: 10rem;
-  margin-right: 10rem; */
   box-shadow: none;
 }
 
@@ -316,11 +317,11 @@
 
 .phone p a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 .emails p a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 .phone p a:hover {
   text-decoration: none;
@@ -373,10 +374,9 @@
 
 /* Footer Style */
 footer {
-  background-color: var(--blue-color);
-  padding-top: 5rem;
+  background: linear-gradient(to right, #1f242b 1%, #38b6ff);
+  padding-top: 6rem;
   padding: 2rem;
-  margin-top: 5rem;
 }
 
 footer p a {

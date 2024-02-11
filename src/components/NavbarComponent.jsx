@@ -24,9 +24,7 @@ export default function NavbarComponent() {
     <div>
       <Navbar
         expand="lg"
-        className={`${
-          changeColor ? "color-active" : ""
-        } p-3 text-white`}
+        className={`${changeColor ? "color-active" : ""} p-4 pt-4 text-white`}
       >
         <Container>
           <Navbar.Brand href="#home" className="fw-bold fs-3">
@@ -34,7 +32,7 @@ export default function NavbarComponent() {
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="mx-auto text-white">
+            <Nav className="mx-auto me-5 text-white">
               {navLinks.map((link) => {
                 return (
                   <div className="nav-link" key={link.id}>

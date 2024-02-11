@@ -1,6 +1,5 @@
 import { Col, Container, Row } from "react-bootstrap";
-import { heroImg } from "../data/js/index";
-import { socialIcon } from "../data/js/index";
+import { heroImg, socialIcon } from "../data/js/index";
 import AboutComponent from "./AboutComponent";
 import ContactComponent from "./ContactComponent";
 import ExperienceComponent from "./ExperienceComponent";
