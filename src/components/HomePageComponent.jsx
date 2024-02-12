@@ -42,7 +42,7 @@ export default function HomePageComponent() {
               </div>
               <div className="buttons">
                 <a
-                  href="https://drive.google.com/file/d/1kG-CzT-DzkasVbg_6k8j5QKDde3jhzTc/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1PcFYSecRgCfPkb1O7RfP27Y_Tjar4LOK/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
