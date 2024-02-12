@@ -32,14 +32,17 @@ export default function PortfolioComponent() {
                 <div
                   data-aos="zoom-in"
                   data-aos-duration={data.aosDuration}
-                  className="cards-porto shadow"
+                  className="cards-porto"
                   key={data.id}
                 >
-                  <Card sx={{ maxWidth: 345 }}>
-                    <CardActionArea>
+                  <Card
+                    sx={{ width: 220, height: 360 }}
+                    className="cards_item bg-transparent shadow border border-1 border-white rounded-3 text-white"
+                  >
+                    <CardActionArea className="cards_action_area">
                       <CardMedia
                         component="img"
-                        height="140"
+                        height="150"
                         image={data.img}
                         alt="green iguana"
                         className="shadow"
@@ -53,18 +56,22 @@ export default function PortfolioComponent() {
                         >
                           {data.title}
                         </Typography>
-                        <Typography variant="body2" color="text.secondary">
+                        <Typography variant="body2" color="text.white">
                           {data.desc}
                         </Typography>
                       </CardContent>
+                      <CardActions>
+                        <Button
+                          size="small"
+                          color="primary"
+                          className="btn_card_porto"
+                        >
+                          <a className="" href={data.link}>
+                            See more
+                          </a>
+                        </Button>
+                      </CardActions>
                     </CardActionArea>
-                    <CardActions>
-                      <Button size="small" color="primary">
-                        <a className="text-decoration-none" href={data.link}>
-                          See more
-                        </a>
-                      </Button>
-                    </CardActions>
                   </Card>
                 </div>
               );
@@ -77,7 +84,7 @@ export default function PortfolioComponent() {
             data-aos-duration="1000"
             className="text-center pt-5"
           >
-            <button className="btn rounded-5">
+            <button className="btn_porto">
               <a
                 className="text-decoration-none"
                 href="https://github.com/Seinki?tab=repositories"
