@@ -1,9 +1,9 @@
 // import { useState } from "react";
 // import axios from "axios";
-import { Col, Container, Form, Row } from "react-bootstrap";
-import { useForm, ValidationError } from "@formspree/react";
+import { ValidationError, useForm } from "@formspree/react";
 import AOS from "aos";
-import "aos/dist/aos.css"; // You can also use <link> for styles
+import "aos/dist/aos.css";
+import { Col, Container, Form, Row } from "react-bootstrap";
 import HandleResponseContact from "../pages/HandleResponseContact";
 // ..
 AOS.init();
@@ -11,7 +11,7 @@ AOS.init();
 export default function ContactComponent() {
   const [state, handleSubmit] = useForm("xknlarow");
   if (state.succeeded) {
-    return <HandleResponseContact />
+    return <HandleResponseContact />;
   }
 
   return (
@@ -71,7 +71,13 @@ export default function ContactComponent() {
                     errors={state.errors}
                   />
                 </Form.Group>
-                <button type="submit" disabled={state.submitting} className="btn">Submit</button>
+                <button
+                  type="submit"
+                  disabled={state.submitting}
+                  className="btn"
+                >
+                  Submit
+                </button>
               </Form>
             </div>
           </Col>
