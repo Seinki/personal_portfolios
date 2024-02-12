@@ -3,19 +3,15 @@ import { Col } from "react-bootstrap";
 
 const TechStack = ({ title, tools }) => {
   return (
-    <>
-      <h4
-        data-aos="fade-up"
-        data-aos-duration="1000"
-        className="ms-5 mt-5 text-decoration-underline fw-semibold"
-      >
+    <div
+      data-aos="fade-up"
+      data-aos-duration="1000"
+      className="border border-1 border-white rounded-5 mb-4"
+    >
+      <h4 className="ms-5 mt-5 text-decoration-underline fw-semibold">
         {title}
       </h4>
-      <Col
-        data-aos="fade-up"
-        data-aos-duration="1000"
-        className="col-12 pt-3 d-flex flex-wrap justify-content-center align-items-center"
-      >
+      <Col className="col-12 pt-3 d-flex flex-wrap justify-content-center align-items-center">
         {tools.map((data) => {
           return (
             <div className="tools" key={data.id}>
@@ -34,7 +30,7 @@ const TechStack = ({ title, tools }) => {
           );
         })}
       </Col>
-    </>
+    </div>
   );
 };
 

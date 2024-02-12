@@ -1,14 +1,42 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import aboutImg from "../assets/img/about-img.png";
 import { tools1, tools2, tools3 } from "../data/js/index";
+import ButtonTeckStack from "./About/ButtonTeckStack";
 import SpecializedIn from "./About/SpecializedIn";
 import TechStack from "./About/TechStack";
+import ExperienceComponent from "./ExperienceComponent";
 // ..
 AOS.init();
 
+// eslint-disable-next-line react/prop-types
+const Content = ({ activeButton }) => {
+  if (activeButton === "Specialized") {
+    return <SpecializedIn />;
+  } else if (activeButton === "TechStack") {
+    return (
+      <div className="my-5">
+        <TechStack title="Frontend" tools={tools1} />
+        <TechStack title="Backend" tools={tools2} />
+        <TechStack title="Others" tools={tools3} />
+      </div>
+    );
+  } else if (activeButton === "Experience") {
+    return <ExperienceComponent />;
+  } else {
+    return null;
+  }
+};
+
 export default function AboutComponent() {
+  const [activeButton, setActiveButton] = useState("Specialized");
+
+  const handleClick = (button) => {
+    setActiveButton(button);
+  };
+
   return (
     <div className="about-page min-vh-100 pt-5">
       <Container>
@@ -23,7 +51,7 @@ export default function AboutComponent() {
             </h1>
           </Col>
         </Row>
-        <Row>
+        <Row className="my-5">
           <Col className="col-12 col-lg-5 justify-content-center align-items-center">
             <img
               src={aboutImg}
@@ -70,30 +98,48 @@ export default function AboutComponent() {
             </p>
           </Col>
         </Row>
-        <Row className="mt-5">
-          <Col className="">
-            <h2
-              data-aos="fade-right"
-              data-aos-duration="1000"
-              className="fw-bold"
-            >
-              Specialized in
-            </h2>
+
+        <Row
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          className="mt-5 d-flex flex-wrap justify-content-between align-items-center"
+        >
+          <Col className="d-flex col-12 col-lg-12 justify-content-lg-start justify-content-center">
+            <Row className="">
+              <Col className="p-3">
+                <ButtonTeckStack
+                  button="Specialized"
+                  title="Specialized"
+                  onClick={() => handleClick("Specialized")}
+                  isActive={activeButton === "Specialized"}
+                />
+              </Col>
+            </Row>
+            <Row>
+              <Col className="p-3">
+                <ButtonTeckStack
+                  button="TechStack"
+                  title="TechStack"
+                  onClick={() => handleClick("TechStack")}
+                  isActive={activeButton === "TechStack"}
+                />
+              </Col>
+            </Row>
+            <Row>
+              <Col className="p-3">
+                <ButtonTeckStack
+                  button="Experience"
+                  title="Experience"
+                  onClick={() => handleClick("Experience")}
+                  isActive={activeButton === "Experience"}
+                />
+              </Col>
+            </Row>
+          </Col>
+          <Col>
+            <Content activeButton={activeButton} />
           </Col>
         </Row>
-        <SpecializedIn />
-        <Col className="col-6 pt-5">
-          <h2
-            data-aos="fade-right"
-            data-aos-duration="1000"
-            className="fw-bold"
-          >
-            TechStack🚀
-          </h2>
-        </Col>
-        <TechStack title="Frontend" tools={tools1} />
-        <TechStack title="Backend" tools={tools2} />
-        <TechStack title="Others" tools={tools3} />
       </Container>
     </div>
   );
