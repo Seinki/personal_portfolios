@@ -13,16 +13,11 @@ export const navLinks = [
   },
   {
     id: 3,
-    path: "exp",
-    text: "Experiences",
-  },
-  {
-    id: 4,
     path: "portfolio",
     text: "Portfolios",
   },
   {
-    id: 5,
+    id: 4,
     path: "contact",
     text: "Contact",
   },
@@ -80,13 +75,12 @@ export const cards = [
   },
 ];
 
-
-import htmlIcon from "../../assets/img/icons/frontend/html-5-svgrepo-com.svg";
-import cssIcon from "../../assets/img/icons/frontend/css-3-svgrepo-com.svg";
-import javascriptIcon from "../../assets/img/icons/frontend/javascript-svgrepo-com.svg";
 import bootstrapIcon from "../../assets/img/icons/frontend/bootstrap.svg";
-import tailwindIcon from "../../assets/img/icons/frontend/icons8-tailwind-css.svg";
+import cssIcon from "../../assets/img/icons/frontend/css-3-svgrepo-com.svg";
+import htmlIcon from "../../assets/img/icons/frontend/html-5-svgrepo-com.svg";
 import reactIcon from "../../assets/img/icons/frontend/icons8-react.svg";
+import tailwindIcon from "../../assets/img/icons/frontend/icons8-tailwind-css.svg";
+import javascriptIcon from "../../assets/img/icons/frontend/javascript-svgrepo-com.svg";
 export const tools1 = [
   {
     id: 1,
@@ -120,11 +114,11 @@ export const tools1 = [
   },
 ];
 
-import nodeIcon from "../../assets/img/icons/backend/icons8-node-js.svg";
 import expressIcon from "../../assets/img/icons/backend/icons8-express-js.svg";
-import javaIcon from "../../assets/img/icons/backend/icons8-java.svg";
-import pythonIcon from "../../assets/img/icons/backend/icons8-python.svg";
 import golangIcon from "../../assets/img/icons/backend/icons8-golang.svg";
+import javaIcon from "../../assets/img/icons/backend/icons8-java.svg";
+import nodeIcon from "../../assets/img/icons/backend/icons8-node-js.svg";
+import pythonIcon from "../../assets/img/icons/backend/icons8-python.svg";
 export const tools2 = [
   {
     id: 1,
@@ -153,14 +147,14 @@ export const tools2 = [
   },
 ];
 
+import cmdIcon from "../../assets/img/icons/others/icons8-cmd-100.png";
 import gitIcon from "../../assets/img/icons/others/icons8-git.svg";
 import githubIcon from "../../assets/img/icons/others/icons8-github.svg";
-import vscodeIcon from "../../assets/img/icons/others/icons8-vs-code.svg";
 import intelijIcon from "../../assets/img/icons/others/icons8-intellij-idea.svg";
-import virtualboxIcon from "../../assets/img/icons/others/icons8-virtualbox.svg";
-import linuxIcon from "../../assets/img/icons/others/icons8-linux-96.png";
 import kalilinuxIcon from "../../assets/img/icons/others/icons8-kali-linux.svg";
-import cmdIcon from "../../assets/img/icons/others/icons8-cmd-100.png";
+import linuxIcon from "../../assets/img/icons/others/icons8-linux-96.png";
+import virtualboxIcon from "../../assets/img/icons/others/icons8-virtualbox.svg";
+import vscodeIcon from "../../assets/img/icons/others/icons8-vs-code.svg";
 export const tools3 = [
   {
     id: 1,
@@ -302,10 +296,10 @@ export const exp = [
   },
 ];
 
-import portfolio1 from "../../assets/img/portfolios/prototype-planet-burger.png";
-import portfolio2 from "../../assets/img/portfolios/ui-planet-burger.png";
 import portfolio3 from "../../assets/img/portfolios/coursely-e-course.png";
 import portfolio4 from "../../assets/img/portfolios/personal-portfolio.png";
+import portfolio1 from "../../assets/img/portfolios/prototype-planet-burger.png";
+import portfolio2 from "../../assets/img/portfolios/ui-planet-burger.png";
 export const portfolio = [
   {
     id: 1,
@@ -328,7 +322,7 @@ export const portfolio = [
     img: portfolio3,
     aosDuration: "2000",
     title: "CourseLy - E-Course",
-    desc: "An e-learning website project called CourseLy to practice using the React Vite framework.",
+    desc: "An e-learning website project called CourseLy that has been responsive with a simple UI to practice using the React Vite framework.",
     link: "https://github.com/Seinki/coursely-web-course",
   },
   {
@@ -336,7 +330,7 @@ export const portfolio = [
     img: portfolio4,
     aosDuration: "3000",
     title: "Personal Portfolios",
-    desc: "This personal web portfolio will continue to be developed for the better in the future. Thank you for visiting :)",
+    desc: "This personal web portfolio will continue to be developed for the better in the future as my knowledge grows. Thank you for visiting :)",
     link: "",
   },
 ];
