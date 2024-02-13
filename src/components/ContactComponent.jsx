@@ -1,15 +1,17 @@
-// import { useState } from "react";
-// import axios from "axios";
 import { ValidationError, useForm } from "@formspree/react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useState } from "react";
 import { Col, Container, Form, Row } from "react-bootstrap";
+import { BeatLoader } from "react-spinners";
 import HandleResponseContact from "../pages/HandleResponseContact";
 // ..
 AOS.init();
 
 export default function ContactComponent() {
   const [state, handleSubmit] = useForm("xknlarow");
+  const [isLoadingSubmit, setLoadingSubmit] = useState(false);
+
   if (state.succeeded) {
     return <HandleResponseContact />;
   }
@@ -31,7 +33,13 @@ export default function ContactComponent() {
         <Row className="pt-5">
           <Col data-aos="fade-right" data-aos-duration="1000">
             <div className="contact-form">
-              <Form onSubmit={handleSubmit}>
+              <Form
+                onSubmit={async (e) => {
+                  setLoadingSubmit(true);
+                  await handleSubmit(e);
+                  setLoadingSubmit(false);
+                }}
+              >
                 <Form.Group
                   className="mb-3"
                   controlId="exampleForm.ControlInput1"
@@ -73,10 +81,16 @@ export default function ContactComponent() {
                 </Form.Group>
                 <button
                   type="submit"
-                  disabled={state.submitting}
+                  disabled={state.submitting || isLoadingSubmit}
                   className="btn"
                 >
-                  Submit
+                  {isLoadingSubmit ? (
+                    <div className="px-2">
+                      <BeatLoader color={"#36D7B7"} size={8} />
+                    </div>
+                  ) : (
+                    "Submit"
+                  )}
                 </button>
               </Form>
             </div>
