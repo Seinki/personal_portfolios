@@ -227,6 +227,12 @@
   transition: all 0.2s ease-in-out;
 }
 
+.loading-spinner {
+  margin-top: 8rem;
+  margin-left: 34rem;
+  margin-bottom: 50rem;
+}
+
 @media screen and (max-width: 996px) {
   .about-img {
     display: none;
@@ -234,6 +240,12 @@
 
   .icon-tools {
     width: 75px;
+  }
+
+  .loading-spinner {
+    margin-top: 8rem;
+    margin-left: 9.4rem;
+    margin-bottom: 50rem;
   }
 }
 
