@@ -1,17 +1,18 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { PropTypes } from "prop-types";
 import { useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
+import { BeatLoader } from "react-spinners";
 import aboutImg from "../assets/img/about-img.png";
 import { tools1, tools2, tools3 } from "../data/js/index";
-import ButtonTeckStack from "./About/ButtonTeckStack";
+import ButtonTechStack from "./About/ButtonTeckStack";
 import SpecializedIn from "./About/SpecializedIn";
 import TechStack from "./About/TechStack";
 import ExperienceComponent from "./ExperienceComponent";
 // ..
 AOS.init();
 
-// eslint-disable-next-line react/prop-types
 const Content = ({ activeButton }) => {
   if (activeButton === "Specialized") {
     return <SpecializedIn />;
@@ -29,16 +30,24 @@ const Content = ({ activeButton }) => {
     return null;
   }
 };
+Content.propTypes = {
+  activeButton: PropTypes.string,
+};
 
 export default function AboutComponent() {
   const [activeButton, setActiveButton] = useState("Specialized");
+  const [isLoading, setLoading] = useState(false);
 
   const handleClick = (button) => {
+    setLoading(true);
     setActiveButton(button);
+    setTimeout(() => {
+      setLoading(false);
+    }, 800);
   };
 
   return (
-    <div className="about-page min-vh-100 pt-5">
+    <div className="about-page min-vh-100 pt-5 position-relative">
       <Container>
         <Row>
           <Col>
@@ -107,7 +116,7 @@ export default function AboutComponent() {
           <Col className="d-flex col-12 col-lg-12 justify-content-lg-start justify-content-center">
             <Row className="">
               <Col className="p-3">
-                <ButtonTeckStack
+                <ButtonTechStack
                   button="Specialized"
                   title="Specialized"
                   onClick={() => handleClick("Specialized")}
@@ -117,7 +126,7 @@ export default function AboutComponent() {
             </Row>
             <Row>
               <Col className="p-3">
-                <ButtonTeckStack
+                <ButtonTechStack
                   button="TechStack"
                   title="TechStack"
                   onClick={() => handleClick("TechStack")}
@@ -127,7 +136,7 @@ export default function AboutComponent() {
             </Row>
             <Row>
               <Col className="p-3">
-                <ButtonTeckStack
+                <ButtonTechStack
                   button="Experience"
                   title="Experience"
                   onClick={() => handleClick("Experience")}
@@ -136,10 +145,21 @@ export default function AboutComponent() {
               </Col>
             </Row>
           </Col>
-          <Col>
-            <Content activeButton={activeButton} />
-          </Col>
+          <Col></Col>
         </Row>
+        {isLoading && (
+          <div className="loading-spinner">
+            <BeatLoader color={"#36D7B7"} size={20} />
+          </div>
+        )}
+
+        {!isLoading && (
+          <Row className="mt-5">
+            <Col>
+              <Content activeButton={activeButton} />
+            </Col>
+          </Row>
+        )}
       </Container>
     </div>
   );
