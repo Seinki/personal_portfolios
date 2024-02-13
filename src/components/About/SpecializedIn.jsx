@@ -4,6 +4,13 @@ import { cards } from "../../data/js/index";
 const SpecializedIn = () => {
   return (
     <Row className="d-flex justify-content-center align-align-items-center mb-5">
+      <h2
+        data-aos="flip-right"
+        data-aos-duration="500"
+        className="text-center fw-bold pt-3"
+      >
+        My Passion
+      </h2>
       <Col className="pt-5 mx-auto d-block d-lg-flex justify-content-center align-align-items-center col-12">
         {cards.map((data) => {
           return (
