@@ -1,7 +1,7 @@
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 import { Accordion, Col, Container, Row } from "react-bootstrap";
-import { exp } from "../data/js/index";
+import { exp } from "../../data/js/index";
 // ..
 AOS.init();
 
@@ -11,13 +11,13 @@ export default function ExperienceComponent() {
       <Container>
         <Row>
           <Col>
-            <h1
+            <h2
               data-aos="fade-up"
               data-aos-duration="1000"
-              className="fw-bold text-center"
+              className="fw-bold text-center pb-5 pt-3"
             >
-              My Experiences
-            </h1>
+              Professional Journey
+            </h2>
           </Col>
         </Row>
         <Row className="row-cols-1 pt-4">
