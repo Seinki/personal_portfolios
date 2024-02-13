@@ -36,19 +36,18 @@
   gap: 5rem;
 }
 .navbar .nav-link a:hover {
-  color: #8a8a8a;
+  color: rgb(200, 200, 200);
 }
 
 .navbar .nav-link .active {
-  background-color: var(--blue-color);
+  border-bottom: 3px solid white;
   color: white;
-  border-radius: 5px;
 }
 
 .navbar .nav-link .active:hover {
-  background-color: #1f7ec7;
-  color: rgb(165, 165, 165);
-  transition: all 0.1s ease-in-out;
+  border-bottom: 3px solid rgb(200, 200, 200);
+  color: rgb(200, 200, 200);
+  transition: all 0.3s ease-in-out;
 }
 
 @media screen and (max-width: 996px) {
