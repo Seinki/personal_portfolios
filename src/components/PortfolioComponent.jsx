@@ -21,7 +21,7 @@ export default function PortfolioComponent() {
               data-aos-duration="1000"
               className="fw-bold text-center pb-5"
             >
-              My Portfolios
+              Creative Showcase
             </h1>
           </Col>
         </Row>

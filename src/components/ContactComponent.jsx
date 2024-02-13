@@ -26,7 +26,7 @@ export default function ContactComponent() {
               data-aos-duration="1000"
               className="fw-bold text-center"
             >
-              Contact Me
+              Let&apos;s Connect
             </h1>
           </Col>
         </Row>

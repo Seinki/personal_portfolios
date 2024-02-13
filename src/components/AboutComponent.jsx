@@ -7,9 +7,9 @@ import { BeatLoader } from "react-spinners";
 import aboutImg from "../assets/img/about-img.png";
 import { tools1, tools2, tools3 } from "../data/js/index";
 import ButtonTechStack from "./About/ButtonTeckStack";
+import ExperienceComponent from "./About/ExperienceComponent";
 import SpecializedIn from "./About/SpecializedIn";
 import TechStack from "./About/TechStack";
-import ExperienceComponent from "./ExperienceComponent";
 // ..
 AOS.init();
 
@@ -56,7 +56,7 @@ export default function AboutComponent() {
               data-aos-duration="1000"
               className="fw-bold text-center pb-5"
             >
-              About Me
+              My Story
             </h1>
           </Col>
         </Row>
@@ -118,7 +118,7 @@ export default function AboutComponent() {
               <Col className="p-3">
                 <ButtonTechStack
                   button="Specialized"
-                  title="Specialized"
+                  title="Expertise"
                   onClick={() => handleClick("Specialized")}
                   isActive={activeButton === "Specialized"}
                 />
@@ -128,7 +128,7 @@ export default function AboutComponent() {
               <Col className="p-3">
                 <ButtonTechStack
                   button="TechStack"
-                  title="TechStack"
+                  title="My Toolkit"
                   onClick={() => handleClick("TechStack")}
                   isActive={activeButton === "TechStack"}
                 />
@@ -138,7 +138,7 @@ export default function AboutComponent() {
               <Col className="p-3">
                 <ButtonTechStack
                   button="Experience"
-                  title="Experience"
+                  title="My Journey"
                   onClick={() => handleClick("Experience")}
                   isActive={activeButton === "Experience"}
                 />
