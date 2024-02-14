@@ -12,9 +12,17 @@ function App() {
       <NavbarComponent />
       <Routes>
         <Route path="/" Component={HomePageComponent} />
-        <Route path="/about" Component={AboutComponent} />
+        <Route
+          path="/about"
+          element={
+            <AboutComponent bgColor={"about-page_newColor text-white"} />
+          }
+        />
         <Route path="/portfolio" Component={PortfolioComponent} />
-        <Route path="/contact" Component={ContactComponent} />
+        <Route
+          path="/contact"
+          element={<ContactComponent bgColor={"contact-page_newColor"} />}
+        />
       </Routes>
       <FooterComponent />
     </>
