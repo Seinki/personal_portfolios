@@ -1,6 +1,7 @@
 import { ValidationError, useForm } from "@formspree/react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { PropTypes } from "prop-types";
 import { useState } from "react";
 import { Col, Container, Form, Row } from "react-bootstrap";
 import { BeatLoader } from "react-spinners";
@@ -8,7 +9,10 @@ import HandleResponseContact from "../pages/HandleResponseContact";
 // ..
 AOS.init();
 
-export default function ContactComponent() {
+ContactComponent.propTypes = {
+  bgColor: PropTypes.string,
+};
+export default function ContactComponent({ bgColor }) {
   const [state, handleSubmit] = useForm("xknlarow");
   const [isLoadingSubmit, setLoadingSubmit] = useState(false);
 
@@ -17,7 +21,7 @@ export default function ContactComponent() {
   }
 
   return (
-    <div className="contact-page min-vh-100 pt-5">
+    <div className={`${bgColor} min-vh-100 pt-5`}>
       <Container>
         <Row className="p-5 m-auto d-flex align-items-center justify-content-center">
           <Col>
