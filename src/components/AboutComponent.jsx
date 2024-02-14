@@ -34,7 +34,11 @@ Content.propTypes = {
   activeButton: PropTypes.string,
 };
 
-export default function AboutComponent() {
+AboutComponent.propTypes = {
+  bgColor: PropTypes.string,
+};
+
+export default function AboutComponent({ bgColor }) {
   const [activeButton, setActiveButton] = useState("Specialized");
   const [isLoading, setLoading] = useState(false);
   const [showMore, setShowMore] = useState(false);
@@ -53,8 +57,8 @@ export default function AboutComponent() {
   };
 
   return (
-    <div className="about-page min-vh-100 pt-5 position-relative">
-      <Container>
+    <div className={`${bgColor} min-vh-100 pt-5 position-relative`}>
+      <Container className="mt-5 pb-5">
         <Row>
           <Col>
             <h1
@@ -78,7 +82,7 @@ export default function AboutComponent() {
             />
           </Col>
           <Col
-            className="col-12 col-lg-7 ps-5"
+            className="col-12 col-lg-7 ps-4 pe-4 ps-md-5 px-lg-5"
             style={{ textAlign: "justify" }}
           >
             <p data-aos="fade-up" data-aos-duration="1000">
