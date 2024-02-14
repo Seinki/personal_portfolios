@@ -68,9 +68,9 @@ export default function HomePageComponent() {
         </Container>
       </div>
       {/* About Page */}
-      <AboutComponent />
+      <AboutComponent bgColor={"about-page"} />
       <PortfolioComponent />
-      <ContactComponent />
+      <ContactComponent bgColor={"contact-page"} />
     </>
   );
 }
